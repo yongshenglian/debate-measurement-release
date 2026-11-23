@@ -1,0 +1,30 @@
+Total number of agents: 3
+
+Processing Strategy: CONCURRENT (20 questions at a time)
+Questions processed:   0%|          | 0/100 [00:00<?, ?it/s][2026-11-20 12:56:10,531][openai._base_client][INFO] - Retrying request to /chat/completions in 0.453617 seconds
+Questions processed:  20%|██        | 20/100 [03:42<14:49, 11.11s/it]Questions processed:  40%|████      | 40/100 [05:52<08:24,  8.40s/it]Questions processed:  60%|██████    | 60/100 [08:34<05:30,  8.26s/it]Questions processed:  80%|████████  | 80/100 [10:03<02:15,  6.76s/it]Questions processed: 100%|██████████| 100/100 [12:09<00:00,  6.59s/it]Questions processed: 100%|██████████| 100/100 [12:09<00:00,  7.29s/it]
+
+Checkpoint saved: /out/seed3/checkpoint
+Progress: 26/100 questions
+Checkpoint saved at question 26/100
+
+Checkpoint saved: /out/seed3/checkpoint
+Progress: 51/100 questions
+Checkpoint saved at question 51/100
+
+Checkpoint saved: /out/seed3/checkpoint
+Progress: 76/100 questions
+Checkpoint saved at question 76/100
+
+Checkpoint saved: /out/seed3/checkpoint
+Progress: 100/100 questions
+Checkpoint saved at question 100/100
+Saving results to /out/seed3/gsm8k_result.json
+
+Running evaluation on results...
+Round 1 majority-vote accuracy: 0.87
+Round 2 majority-vote accuracy: 0.82
+Round 3 majority-vote accuracy: 0.82
+Saving performance metrics to /out/seed3/gsm8k_performance.json
+
+Experiment completed and saved to checkpoint: /out/seed3/checkpoint

@@ -1,0 +1,44 @@
+== S1_dov n=300
+   vote by round  93.4 93.8 92.8 92.5 | individual 84.1 91.2 90.0 89.3 | no answer % 4.5 1.3 2.7 3.7
+   P1 final - r0 vote -0.9 [-3.4, +1.6] | P2 G4 gate -0.2 [-2.6, +2.0] | G5 -0.9 [-3.4, +1.6] | pool -0.9 [-3.3, +1.4]
+   rescued/broken by r0 agreement: 5/5 (n=178): +0.0 / -0.0; 4/5 (n=71): +0.0 / -2.0; <=3/5 (n=51): +6.5 / -7.2
+== S2_dmad n=300
+   vote by round  94.2 92.9 89.8 87.8 | individual 86.2 87.9 87.8 86.7 | no answer % 6.7 5.1 5.4 6.3
+   P1 final - r0 vote -6.3 [-9.3, -3.5] | P2 G4 gate -3.8 [-6.3, -1.6] | G5 -4.5 [-7.2, -2.1] | pool -1.0 [-2.6, +0.4]
+   rescued/broken by r0 agreement: 5/5 (n=204): +0.0 / -5.5; 4/5 (n=49): +0.0 / -2.0; <=3/5 (n=47): +2.0 / -13.5
+== S3_dmad_dovword n=300
+   vote by round  94.2 95.2 95.0 93.7 | individual 86.2 91.1 92.7 92.3 | no answer % 6.7 4.3 2.9 2.7
+   P1 final - r0 vote -0.5 [-2.8, +1.7] | P2 G4 gate +0.5 [-1.5, +2.4] | G5 -0.5 [-2.8, +1.7] | pool +0.5 [-1.4, +2.4]
+   rescued/broken by r0 agreement: 5/5 (n=204): +0.0 / -0.0; 4/5 (n=49): +0.0 / -3.0; <=3/5 (n=47): +6.0 / -4.5
+== S4_dmad_raw n=300
+   vote by round  93.7 92.7 92.3 92.2 | individual 87.3 91.2 91.2 91.0 | no answer % 3.3 1.7 2.3 2.3
+   P1 final - r0 vote -1.5 [-3.8, +0.8] | P2 G4 gate -0.5 [-2.5, +1.5] | G5 -1.5 [-3.8, +0.8] | pool -0.3 [-2.3, +1.7]
+   rescued/broken by r0 agreement: 5/5 (n=208): +0.0 / -0.0; 4/5 (n=49): +0.0 / -3.0; <=3/5 (n=43): +4.5 / -6.0
+== S5_dmad_512 n=300
+   vote by round  93.4 91.7 88.2 85.3 | individual 81.9 86.3 85.3 83.5 | no answer % 12.4 8.4 8.4 9.7
+   P1 final - r0 vote -8.1 [-11.6, -4.7] | P2 G4 gate -4.7 [-7.7, -1.9] | G5 -6.7 [-10.1, -3.6] | pool -0.6 [-2.2, +1.1]
+   rescued/broken by r0 agreement: 5/5 (n=179): +0.0 / -4.0; 4/5 (n=54): +0.0 / -6.0; <=3/5 (n=67): +3.7 / -17.8
+== S6_dmad_ansonly n=300
+   vote by round  94.2 94.5 94.7 94.7 | individual 86.2 86.7 87.9 88.1 | no answer % 6.7 7.1 5.8 5.4
+   P1 final - r0 vote +0.5 [-1.2, +2.2] | P2 G4 gate +0.2 [-1.4, +1.7] | G5 +0.5 [-1.2, +2.2] | pool +1.2 [-0.1, +2.5]
+   rescued/broken by r0 agreement: 5/5 (n=204): +0.0 / -0.0; 4/5 (n=49): +1.0 / -0.0; <=3/5 (n=47): +4.2 / -3.7
+== S7_dov_chat n=300
+   vote by round  93.4 94.0 94.8 94.3 | individual 89.1 92.1 93.4 93.7 | no answer % 1.9 1.2 0.7 0.5
+   P1 final - r0 vote +0.9 [-1.2, +3.1] | P2 G4 gate +0.9 [-0.8, +2.9] | G5 +0.9 [-1.2, +3.1] | pool +1.2 [-0.5, +3.2]
+   rescued/broken by r0 agreement: 5/5 (n=224): +0.0 / -0.0; 4/5 (n=50): +1.0 / -1.0; <=3/5 (n=26): +5.8 / -3.0
+
+== Factor contrasts on P1 (final - r0)
+   C1 S1_dov - S2_dmad: +5.4 [+1.7, +9.4]  p=0.0049  Holm=nan
+   C2 S3_dmad_dovword - S2_dmad: +5.8 [+2.7, +9.2]  p=0.0003  Holm=0.0012
+   C3 S4_dmad_raw - S2_dmad: +4.8 [+1.3, +8.5]  p=0.0062  Holm=0.0186
+   C4 S5_dmad_512 - S2_dmad: -1.7 [-5.3, +1.8]  p=0.3395  Holm=0.4624
+   C5 S6_dmad_ansonly - S2_dmad: +6.8 [+3.8, +10.2]  p=0.0000  Holm=0.0000
+   C6 S7_dov_chat - S1_dov: +1.8 [-1.1, +4.8]  p=0.2312  Holm=0.4624
+
+== Factor contrasts on P2 (G4 gate - r0)
+   C1 S1_dov - S2_dmad: +3.6 [+0.4, +7.0]  p=0.0285  Holm=nan
+   C2 S3_dmad_dovword - S2_dmad: +4.3 [+2.0, +7.0]  p=0.0001  Holm=0.0005
+   C3 S4_dmad_raw - S2_dmad: +3.3 [+0.3, +6.5]  p=0.0302  Holm=0.0906
+   C4 S5_dmad_512 - S2_dmad: -0.9 [-4.0, +2.2]  p=0.5664  Holm=0.8218
+   C5 S6_dmad_ansonly - S2_dmad: +4.0 [+1.5, +6.7]  p=0.0007  Holm=0.0028
+   C6 S7_dov_chat - S1_dov: +1.1 [-1.5, +4.0]  p=0.4109  Holm=0.8218

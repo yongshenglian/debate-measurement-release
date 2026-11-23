@@ -1,0 +1,116 @@
+
+######## gsm8k
+== judge gemma: disagreements 99 (own right 64, other right 21, neither 14); invalid {'owner': 0, 'neutral': 0, 'neutral_swap': 0, 'label_swap': 0}
+   owner rerun = original review answer on 91.9%
+   accuracy on disagreements: owner 68.7  neutral 70.7  neutral_swap 80.8  label_swap 77.8
+   J1 neutral - owner: +2.0 [-6.1, +10.1]
+   (neutral + neutral_swap)/2 - owner: +7.1 [-1.0, +15.2]
+   label_swap - owner: +9.1 [+0.0, +18.2]
+   final = judge's own first answer: owner 55.6%  neutral 66.7%  neutral_swap 69.7%  label_swap 73.7%
+   final = other model's answer:     owner 39.4%  neutral 28.3%  neutral_swap 23.2%  label_swap 20.2%
+   J3 retention of own answer, label_swap - owner: +18.2 [+9.1, +27.3]
+   position: retention neutral (own = A) - neutral_swap (own = B): -3.0 [-12.1, +6.1]
+   [owner] abandons own right answer 17/64 = 26.6%  |  accepts other's right answer 18/21 = 85.7%
+   [neutral] abandons own right answer 11/64 = 17.2%  |  accepts other's right answer 14/21 = 66.7%
+   [neutral_swap] abandons own right answer 5/64 = 7.8%  |  accepts other's right answer 16/21 = 76.2%
+   [label_swap] abandons own right answer 6/64 = 9.4%  |  accepts other's right answer 14/21 = 66.7%
+   system [neutral judge on disagreements] 95.8 | Gemma s0 95.3 | vote3 96.1 | - Gemma s0 +0.5 [-0.3, +1.3] | - vote3 -0.3 [-1.1, +0.5]
+   system [owner judge on disagreements] 95.6 | Gemma s0 95.3 | vote3 96.1 | - Gemma s0 +0.3 [-0.6, +1.2] | - vote3 -0.5 [-1.3, +0.4]
+== judge qwen: disagreements 99 (own right 21, other right 64, neither 14); invalid {'owner': 0, 'neutral': 0, 'neutral_swap': 0, 'label_swap': 0}
+   owner rerun = original review answer on 86.9%
+   accuracy on disagreements: owner 50.5  neutral 43.4  neutral_swap 58.6  label_swap 53.5
+   J1 neutral - owner: -7.1 [-17.2, +4.0]
+   (neutral + neutral_swap)/2 - owner: +0.5 [-9.6, +10.6]
+   label_swap - owner: +3.0 [-8.1, +14.1]
+   final = judge's own first answer: owner 60.6%  neutral 66.7%  neutral_swap 39.4%  label_swap 41.4%
+   final = other model's answer:     owner 36.4%  neutral 28.3%  neutral_swap 57.6%  label_swap 53.5%
+   J3 retention of own answer, label_swap - owner: -19.2 [-30.3, -8.1]
+   position: retention neutral (own = A) - neutral_swap (own = B): +27.3 [+16.2, +38.4]
+   [owner] abandons own right answer 3/21 = 14.3%  |  accepts other's right answer 30/64 = 46.9%
+   [neutral] abandons own right answer 2/21 = 9.5%  |  accepts other's right answer 23/64 = 35.9%
+   [neutral_swap] abandons own right answer 7/21 = 33.3%  |  accepts other's right answer 44/64 = 68.8%
+   [label_swap] abandons own right answer 8/21 = 38.1%  |  accepts other's right answer 40/64 = 62.5%
+   system [neutral judge on disagreements] 93.7 | Gemma s0 95.3 | vote3 96.1 | - Gemma s0 -1.6 [-2.7, -0.5] | - vote3 -2.4 [-3.5, -1.3]
+   system [owner judge on disagreements] 94.2 | Gemma s0 95.3 | vote3 96.1 | - Gemma s0 -1.1 [-2.1, +0.0] | - vote3 -1.8 [-2.9, -0.8]
+
+######## math
+== judge gemma: disagreements 209 (own right 134, other right 17, neither 58); invalid {'owner': 0, 'neutral': 0, 'neutral_swap': 0, 'label_swap': 0}
+   owner rerun = original review answer on 85.6%
+   accuracy on disagreements: owner 64.1  neutral 67.0  neutral_swap 66.0  label_swap 67.5
+   J1 neutral - owner: +2.9 [-1.4, +7.7]
+   (neutral + neutral_swap)/2 - owner: +2.4 [-1.7, +6.5]
+   label_swap - owner: +3.3 [-1.4, +8.1]
+   final = judge's own first answer: owner 74.2%  neutral 76.1%  neutral_swap 79.4%  label_swap 79.9%
+   final = other model's answer:     owner 19.1%  neutral 14.4%  neutral_swap 14.4%  label_swap 10.5%
+   J3 retention of own answer, label_swap - owner: +5.7 [+0.5, +11.0]
+   position: retention neutral (own = A) - neutral_swap (own = B): -3.3 [-8.1, +1.4]
+   [owner] abandons own right answer 16/134 = 11.9%  |  accepts other's right answer 10/17 = 58.8%
+   [neutral] abandons own right answer 9/134 = 6.7%  |  accepts other's right answer 9/17 = 52.9%
+   [neutral_swap] abandons own right answer 8/134 = 6.0%  |  accepts other's right answer 8/17 = 47.1%
+   [label_swap] abandons own right answer 7/134 = 5.2%  |  accepts other's right answer 6/17 = 35.3%
+   system [neutral judge on disagreements] 85.2 | Gemma s0 84.2 | vote3 84.7 | - Gemma s0 +1.0 [-0.5, +2.7] | - vote3 +0.5 [-1.2, +2.2]
+   system [owner judge on disagreements] 84.2 | Gemma s0 84.2 | vote3 84.7 | - Gemma s0 +0.0 [-1.8, +1.8] | - vote3 -0.5 [-2.3, +1.2]
+== judge qwen: disagreements 209 (own right 17, other right 134, neither 58); invalid {'owner': 0, 'neutral': 0, 'neutral_swap': 0, 'label_swap': 0}
+   owner rerun = original review answer on 83.7%
+   accuracy on disagreements: owner 42.1  neutral 39.2  neutral_swap 50.2  label_swap 40.7
+   J1 neutral - owner: -2.9 [-9.1, +3.3]
+   (neutral + neutral_swap)/2 - owner: +2.6 [-2.6, +7.9]
+   label_swap - owner: -1.4 [-8.1, +5.3]
+   final = judge's own first answer: owner 42.1%  neutral 50.7%  neutral_swap 37.3%  label_swap 44.0%
+   final = other model's answer:     owner 50.7%  neutral 43.5%  neutral_swap 56.0%  label_swap 46.4%
+   J3 retention of own answer, label_swap - owner: +1.9 [-4.8, +8.6]
+   position: retention neutral (own = A) - neutral_swap (own = B): +13.4 [+5.3, +21.1]
+   [owner] abandons own right answer 8/17 = 47.1%  |  accepts other's right answer 77/134 = 57.5%
+   [neutral] abandons own right answer 7/17 = 41.2%  |  accepts other's right answer 69/134 = 51.5%
+   [neutral_swap] abandons own right answer 7/17 = 41.2%  |  accepts other's right answer 92/134 = 68.7%
+   [label_swap] abandons own right answer 8/17 = 47.1%  |  accepts other's right answer 74/134 = 55.2%
+   system [neutral judge on disagreements] 75.5 | Gemma s0 84.2 | vote3 84.7 | - Gemma s0 -8.7 [-11.5, -6.0] | - vote3 -9.2 [-12.0, -6.5]
+   system [owner judge on disagreements] 76.5 | Gemma s0 84.2 | vote3 84.7 | - Gemma s0 -7.7 [-10.3, -5.2] | - vote3 -8.2 [-10.8, -5.7]
+
+######## mmlu
+== judge gemma: disagreements 250 (own right 117, other right 46, neither 87); invalid {'owner': 0, 'neutral': 0, 'neutral_swap': 0, 'label_swap': 0}
+   owner rerun = original review answer on 86.4%
+   accuracy on disagreements: owner 40.4  neutral 47.2  neutral_swap 49.2  label_swap 50.0
+   J1 neutral - owner: +6.8 [+2.0, +11.6]
+   (neutral + neutral_swap)/2 - owner: +7.8 [+3.4, +12.4]
+   label_swap - owner: +9.6 [+4.0, +14.8]
+   final = judge's own first answer: owner 62.0%  neutral 69.2%  neutral_swap 85.6%  label_swap 87.6%
+   final = other model's answer:     owner 33.2%  neutral 25.6%  neutral_swap 11.6%  label_swap 8.8%
+   J3 retention of own answer, label_swap - owner: +25.6 [+19.2, +32.0]
+   position: retention neutral (own = A) - neutral_swap (own = B): -16.4 [-22.4, -10.4]
+   [owner] abandons own right answer 36/117 = 30.8%  |  accepts other's right answer 19/46 = 41.3%
+   [neutral] abandons own right answer 22/117 = 18.8%  |  accepts other's right answer 18/46 = 39.1%
+   [neutral_swap] abandons own right answer 7/117 = 6.0%  |  accepts other's right answer 13/46 = 28.3%
+   [label_swap] abandons own right answer 2/117 = 1.7%  |  accepts other's right answer 9/46 = 19.6%
+   system [neutral judge on disagreements] 66.5 | Gemma s0 66.3 | vote3 67.5 | - Gemma s0 +0.2 [-2.0, +2.3] | - vote3 -1.0 [-3.2, +1.2]
+   system [owner judge on disagreements] 63.7 | Gemma s0 66.3 | vote3 67.5 | - Gemma s0 -2.7 [-5.2, -0.3] | - vote3 -3.8 [-6.3, -1.3]
+== judge qwen: disagreements 250 (own right 46, other right 117, neither 87); invalid {'owner': 0, 'neutral': 0, 'neutral_swap': 0, 'label_swap': 0}
+   owner rerun = original review answer on 77.2%
+   accuracy on disagreements: owner 40.4  neutral 38.8  neutral_swap 35.2  label_swap 35.2
+   J1 neutral - owner: -1.6 [-6.8, +3.6]
+   (neutral + neutral_swap)/2 - owner: -3.4 [-8.0, +1.4]
+   label_swap - owner: -5.2 [-11.6, +1.2]
+   final = judge's own first answer: owner 30.0%  neutral 35.2%  neutral_swap 62.4%  label_swap 62.8%
+   final = other model's answer:     owner 64.8%  neutral 61.2%  neutral_swap 35.2%  label_swap 33.6%
+   J3 retention of own answer, label_swap - owner: +32.8 [+26.0, +39.6]
+   position: retention neutral (own = A) - neutral_swap (own = B): -27.2 [-34.8, -19.6]
+   [owner] abandons own right answer 27/46 = 58.7%  |  accepts other's right answer 81/117 = 69.2%
+   [neutral] abandons own right answer 27/46 = 58.7%  |  accepts other's right answer 78/117 = 66.7%
+   [neutral_swap] abandons own right answer 12/46 = 26.1%  |  accepts other's right answer 53/117 = 45.3%
+   [label_swap] abandons own right answer 11/46 = 23.9%  |  accepts other's right answer 52/117 = 44.4%
+   system [neutral judge on disagreements] 63.0 | Gemma s0 66.3 | vote3 67.5 | - Gemma s0 -3.3 [-5.8, -0.8] | - vote3 -4.5 [-7.0, -2.0]
+   system [owner judge on disagreements] 63.7 | Gemma s0 66.3 | vote3 67.5 | - Gemma s0 -2.7 [-5.2, -0.3] | - vote3 -3.8 [-6.2, -1.5]
+
+######## primary
+PRIMARY J1 mmlu:gemma: +6.8 [+2.0, +11.6]  p=0.0078  Holm=0.0468
+PRIMARY J1 gsm8k:qwen: -7.1 [-17.2, +4.0]  p=0.2237  Holm=1.0000
+PRIMARY J1 math:gemma: +2.9 [-1.4, +7.7]  p=0.2581  Holm=1.0000
+PRIMARY J1 math:qwen: -2.9 [-9.1, +3.3]  p=0.4063  Holm=1.0000
+PRIMARY J1 mmlu:qwen: -1.6 [-6.8, +3.6]  p=0.5923  Holm=1.0000
+PRIMARY J1 gsm8k:gemma: +2.0 [-6.1, +10.1]  p=0.7267  Holm=1.0000
+PRIMARY J2a math: +1.0 [-0.5, +2.7]  p=0.2585  Holm=1.0000
+PRIMARY J2a gsm8k: +0.5 [-0.3, +1.3]  p=0.2993  Holm=1.0000
+PRIMARY J2b mmlu: -1.0 [-3.2, +1.2]  p=0.4167  Holm=1.0000
+PRIMARY J2b gsm8k: -0.3 [-1.1, +0.5]  p=0.4790  Holm=1.0000
+PRIMARY J2b math: +0.5 [-1.2, +2.2]  p=0.6137  Holm=1.0000
+PRIMARY J2a mmlu: +0.2 [-2.0, +2.3]  p=0.9457  Holm=1.0000

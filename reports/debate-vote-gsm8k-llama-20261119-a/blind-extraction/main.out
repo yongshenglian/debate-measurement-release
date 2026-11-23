@@ -1,0 +1,11 @@
+gemma r0: vote 0.871 individual 0.777 no-answer 16
+gemma r1: vote 0.859 individual 0.808 no-answer 19
+gemma r2: vote 0.865 individual 0.811 no-answer 24
+gemma r3: vote 0.864 individual 0.825 no-answer 16
+gemma r4: vote 0.853 individual 0.816 no-answer 23
+gemma r5: vote 0.847 individual 0.815 no-answer 21
+PRIMARY vote r5 - r0 (Gemma readings): -2.4 pp [-6.3, +1.1]
+agreement with published       by round: 89.4 91.5 91.0 90.8 91.5 91.8
+agreement with published+echo  by round: 90.1 92.4 92.3 92.1 93.5 93.7
+agreement with robust          by round: 91.2 91.3 89.3 87.5 89.5 89.6
+agreement with robust+echo     by round: 91.9 93.0 92.2 91.2 93.5 93.6

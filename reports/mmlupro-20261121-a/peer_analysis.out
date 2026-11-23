@@ -1,0 +1,76 @@
+##### neutral
+
+== reviewer qwen: 600 of 600 tasks analysed; invalid outputs {'solve_s0': 0, 'solve_s1': 0, 'review': {'self': 0, 'peer_qwen': 0, 'peer_gemma': 0}}
+   first answer 54.5%  |  self 55.8%  peer_qwen 56.0%  peer_gemma 65.5%
+   peer_qwen - self: +0.2 [-2.5, +2.8]
+   peer_gemma - self: +9.7 [+6.3, +13.0]
+   self - first answer: +1.3 [+0.2, +2.7]
+   [self] corruption: 0.9% (3/327); rescue: 4.0% (11/273)
+   [peer_qwen] corruption: 9.5% (31/327); rescue: 14.7% (40/273); corruption|peer wrong: 56.9% (29/51); followed wrong peer|own right: 54.9% (28/51); corruption|peer right: 0.7% (2/276); rescue|peer right: 71.7% (33/46)
+   [peer_gemma] corruption: 7.6% (25/327); rescue: 33.3% (91/273); corruption|peer wrong: 52.2% (24/46); followed wrong peer|own right: 50.0% (23/46); corruption|peer right: 0.4% (1/281); rescue|peer right: 74.4% (87/117)
+
+== reviewer gemma: 600 of 600 tasks analysed; invalid outputs {'solve_s0': 0, 'solve_s1': 0, 'review': {'self': 0, 'peer_qwen': 0, 'peer_gemma': 0}}
+   first answer 66.3%  |  self 66.2%  peer_qwen 64.0%  peer_gemma 65.5%
+   peer_qwen - self: -2.2 [-5.0, +0.5]
+   peer_gemma - self: -0.7 [-3.5, +2.2]
+   self - first answer: -0.2 [-2.3, +2.0]
+   [self] corruption: 5.5% (22/398); rescue: 10.4% (21/202)
+   [peer_qwen] corruption: 8.8% (35/398); rescue: 10.4% (21/202); corruption|peer wrong: 29.9% (35/117); followed wrong peer|own right: 25.6% (30/117); corruption|peer right: 0.0% (0/281); rescue|peer right: 39.1% (18/46)
+   [peer_gemma] corruption: 8.8% (35/398); rescue: 14.9% (30/202); corruption|peer wrong: 73.9% (34/46); followed wrong peer|own right: 69.6% (32/46); corruption|peer right: 0.3% (1/352); rescue|peer right: 76.3% (29/38)
+
+PRIMARY R1 (gemma reads qwen): -2.2 [-5.0, +0.5]
+MIRROR  R2 (qwen reads gemma): +9.7 [+6.3, +13.0]
+-- mech
+gemma reads qwen: own-wrong&peer-right 46, rescued 18 | own-right&peer-wrong 117, followed 30, abandoned 35 | predicted net -17 vs observed net vs first answer -14
+gemma reads gemma: own-wrong&peer-right 38, rescued 29 | own-right&peer-wrong 46, followed 32, abandoned 34 | predicted net -5 vs observed net vs first answer -5
+   gemma pooled accept correct peer (own wrong, peer right): 56.0% [45.3, 66.1] (47/84)
+   gemma pooled follow wrong peer (own right, peer wrong): 38.0% [30.9, 45.7] (62/163)
+   gemma pooled abandon right answer (own right, peer wrong): 42.3% [35.0, 50.0] (69/163)
+qwen reads qwen: own-wrong&peer-right 46, rescued 33 | own-right&peer-wrong 51, followed 28, abandoned 29 | predicted net +4 vs observed net vs first answer +9
+qwen reads gemma: own-wrong&peer-right 117, rescued 87 | own-right&peer-wrong 46, followed 23, abandoned 24 | predicted net +63 vs observed net vs first answer +66
+   qwen pooled accept correct peer (own wrong, peer right): 73.6% [66.4, 79.8] (120/163)
+   qwen pooled follow wrong peer (own right, peer wrong): 52.6% [42.7, 62.2] (51/97)
+   qwen pooled abandon right answer (own right, peer wrong): 54.6% [44.7, 64.2] (53/97)
+##### indep
+
+== reviewer qwen: 600 of 600 tasks analysed; invalid outputs {'solve_s0': 0, 'solve_s1': 0, 'review': {'self': 0, 'peer_qwen': 0, 'peer_gemma': 0}}
+   first answer 54.5%  |  self 54.8%  peer_qwen 55.3%  peer_gemma 64.3%
+   peer_qwen - self: +0.5 [-2.3, +3.3]
+   peer_gemma - self: +9.5 [+6.3, +12.8]
+   self - first answer: +0.3 [-1.0, +1.7]
+   [self] corruption: 2.4% (8/327); rescue: 3.7% (10/273)
+   [peer_qwen] corruption: 9.8% (32/327); rescue: 13.6% (37/273); corruption|peer wrong: 58.8% (30/51); followed wrong peer|own right: 56.9% (29/51); corruption|peer right: 0.7% (2/276); rescue|peer right: 60.9% (28/46)
+   [peer_gemma] corruption: 6.1% (20/327); rescue: 28.9% (79/273); corruption|peer wrong: 43.5% (20/46); followed wrong peer|own right: 43.5% (20/46); corruption|peer right: 0.0% (0/281); rescue|peer right: 65.0% (76/117)
+
+== reviewer gemma: 600 of 600 tasks analysed; invalid outputs {'solve_s0': 0, 'solve_s1': 0, 'review': {'self': 0, 'peer_qwen': 0, 'peer_gemma': 0}}
+   first answer 66.3%  |  self 65.3%  peer_qwen 66.0%  peer_gemma 65.7%
+   peer_qwen - self: +0.7 [-2.2, +3.3]
+   peer_gemma - self: +0.3 [-2.7, +3.3]
+   self - first answer: -1.0 [-3.3, +1.3]
+   [self] corruption: 7.0% (28/398); rescue: 10.9% (22/202)
+   [peer_qwen] corruption: 6.0% (24/398); rescue: 10.9% (22/202); corruption|peer wrong: 19.7% (23/117); followed wrong peer|own right: 14.5% (17/117); corruption|peer right: 0.4% (1/281); rescue|peer right: 39.1% (18/46)
+   [peer_gemma] corruption: 8.3% (33/398); rescue: 14.4% (29/202); corruption|peer wrong: 65.2% (30/46); followed wrong peer|own right: 60.9% (28/46); corruption|peer right: 0.9% (3/352); rescue|peer right: 68.4% (26/38)
+
+PRIMARY R1 (gemma reads qwen): +0.7 [-2.2, +3.3]
+MIRROR  R2 (qwen reads gemma): +9.5 [+6.3, +12.8]
+-- mech
+gemma reads qwen: own-wrong&peer-right 46, rescued 18 | own-right&peer-wrong 117, followed 17, abandoned 23 | predicted net -5 vs observed net vs first answer -2
+gemma reads gemma: own-wrong&peer-right 38, rescued 26 | own-right&peer-wrong 46, followed 28, abandoned 30 | predicted net -4 vs observed net vs first answer -4
+   gemma pooled accept correct peer (own wrong, peer right): 52.4% [41.8, 62.7] (44/84)
+   gemma pooled follow wrong peer (own right, peer wrong): 27.6% [21.3, 34.9] (45/163)
+   gemma pooled abandon right answer (own right, peer wrong): 32.5% [25.8, 40.0] (53/163)
+qwen reads qwen: own-wrong&peer-right 46, rescued 28 | own-right&peer-wrong 51, followed 29, abandoned 30 | predicted net -2 vs observed net vs first answer +5
+qwen reads gemma: own-wrong&peer-right 117, rescued 76 | own-right&peer-wrong 46, followed 20, abandoned 20 | predicted net +56 vs observed net vs first answer +59
+   qwen pooled accept correct peer (own wrong, peer right): 63.8% [56.2, 70.8] (104/163)
+   qwen pooled follow wrong peer (own right, peer wrong): 50.5% [40.7, 60.3] (49/97)
+   qwen pooled abandon right answer (own right, peer wrong): 51.5% [41.7, 61.2] (50/97)
+##### indep vs neutral
+gemma self       n=600: neutral 66.2  indep 65.3  indep - neutral -0.8 [-3.3, +1.7]
+gemma peer_qwen  n=600: neutral 64.0  indep 66.0  indep - neutral +2.0 [+0.0, +4.2]
+gemma peer_gemma n=600: neutral 65.5  indep 65.7  indep - neutral +0.2 [-1.7, +2.0]
+qwen self       n=600: neutral 55.8  indep 54.8  indep - neutral -1.0 [-2.5, +0.5]
+qwen peer_qwen  n=600: neutral 56.0  indep 55.3  indep - neutral -0.7 [-2.5, +1.2]
+qwen peer_gemma n=600: neutral 65.5  indep 64.3  indep - neutral -1.2 [-3.7, +1.2]
+PRIMARY IR  gemma:peer_qwen: +2.0 [+0.0, +4.2]  p=0.0712  Holm=0.2136
+PRIMARY IR  qwen:peer_qwen: -0.7 [-2.5, +1.2]  p=0.5460  Holm=0.7874
+PRIMARY IR  qwen:peer_gemma: -1.2 [-3.7, +1.2]  p=0.3937  Holm=0.7874

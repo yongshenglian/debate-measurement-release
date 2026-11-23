@@ -1,0 +1,10 @@
+- task=gsm8k
+- experiment.name=3L
+- experiment.num_questions=100
+- experiment.num_rounds=2
+- agent_counts.0=3
+- agent_counts.1=0
+- seed=2
+- wandb.mode=disabled
+- cost_check=False
+- experiment.max_concurrent_calls=60

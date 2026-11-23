@@ -1,0 +1,2 @@
+qwen exit 0
+llama exit 0

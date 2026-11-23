@@ -1,0 +1,15 @@
+
+######## Debate vs 20-sample vote (Gemma-filled reader): sign-flip test, strict transitions, measured cost
+
+== math: vote20 73.4 | seconds 1184 | output tokens 4,199,274 | question tokens in 484,740
+   H_full        final - vote20 -6.5 [-10.3, -2.9] sign-flip p=0.0005 | strict wins 7 / losses 24 | seconds 3073 (2.60x vote20) | output tokens 3,229,923 (0.77x) | input content tokens 10,521,944 (21.7x)
+   H_ans         final - vote20 -3.7 [-7.2, -0.5] sign-flip p=0.0303 | strict wins 6 / losses 16 | seconds 1863 (1.57x vote20) | output tokens 3,548,969 (0.85x) | input content tokens 484,740 (1.0x)
+   H_dovword     final - vote20 -7.0 [-10.8, -3.3] sign-flip p=0.0003 | strict wins 6 / losses 25 | seconds 4683 (3.96x vote20) | output tokens 4,196,902 (1.00x) | input content tokens 12,983,216 (26.8x)
+   H_full_indep  final - vote20 -5.1 [-8.8, -1.5] sign-flip p=0.0071 | strict wins 7 / losses 23 | seconds 3501 (2.96x vote20) | output tokens 3,528,414 (0.84x) | input content tokens 11,330,932 (23.4x)
+   H_ans_indep   final - vote20 -3.8 [-7.2, -0.5] sign-flip p=0.0305 | strict wins 8 / losses 15 | seconds 1992 (1.68x vote20) | output tokens 3,679,824 (0.88x) | input content tokens 484,740 (1.0x)
+
+== mmlu: vote20 59.7 | seconds 971 | output tokens 3,235,210 | question tokens in 1,274,300
+   H_full        final - vote20 -5.0 [-10.0, +0.0] sign-flip p=0.0603 | strict wins 21 / losses 35 | seconds 2381 (2.45x vote20) | output tokens 2,557,719 (0.79x) | input content tokens 9,082,064 (7.1x)
+   H_ans         final - vote20 -1.0 [-4.8, +2.8] sign-flip p=0.6143 | strict wins 13 / losses 14 | seconds 1486 (1.53x vote20) | output tokens 2,783,204 (0.86x) | input content tokens 1,274,300 (1.0x)
+   H_full_indep  final - vote20 -4.8 [-9.7, +0.0] sign-flip p=0.0640 | strict wins 21 / losses 33 | seconds 2660 (2.74x vote20) | output tokens 2,790,880 (0.86x) | input content tokens 9,671,992 (7.6x)
+   H_ans_indep   final - vote20 -1.4 [-5.7, +2.7] sign-flip p=0.5031 | strict wins 13 / losses 22 | seconds 1560 (1.61x vote20) | output tokens 2,880,268 (0.89x) | input content tokens 1,274,300 (1.0x)

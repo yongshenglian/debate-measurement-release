@@ -1,0 +1,10 @@
+gemma reads qwen: own-wrong&peer-right 21, rescued 18 | own-right&peer-wrong 64, followed 17, abandoned 19 | predicted net -1 vs observed net vs first answer -1
+gemma reads gemma: own-wrong&peer-right 13, rescued 12 | own-right&peer-wrong 9, followed 2, abandoned 2 | predicted net +10 vs observed net vs first answer +6
+   gemma pooled accept correct peer (own wrong, peer right): 88.2% [73.4, 95.3] (30/34)
+   gemma pooled follow wrong peer (own right, peer wrong): 26.0% [17.3, 37.1] (19/73)
+   gemma pooled abandon right answer (own right, peer wrong): 28.8% [19.7, 40.0] (21/73)
+qwen reads qwen: own-wrong&peer-right 38, rescued 16 | own-right&peer-wrong 41, followed 13, abandoned 14 | predicted net +2 vs observed net vs first answer +3
+qwen reads gemma: own-wrong&peer-right 64, rescued 29 | own-right&peer-wrong 21, followed 6, abandoned 6 | predicted net +23 vs observed net vs first answer +23
+   qwen pooled accept correct peer (own wrong, peer right): 44.1% [34.9, 53.8] (45/102)
+   qwen pooled follow wrong peer (own right, peer wrong): 30.6% [20.6, 43.0] (19/62)
+   qwen pooled abandon right answer (own right, peer wrong): 32.3% [22.0, 44.6] (20/62)

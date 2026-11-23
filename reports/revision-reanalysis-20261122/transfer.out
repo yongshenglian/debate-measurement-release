@@ -1,0 +1,28 @@
+
+######## Transfer of rates between tasks (post hoc). Prediction and observation are the SAME quantity:
+         peer - initial answer on the target task. Predicted = sum_c p_c(target) * (rate_c(source) - initial_c).
+         Uncertainty: source and target problems resampled independently (20,000 draws).
+   gemma reads other gsm8k -> math : predicted -3.7, observed -1.3, predicted - observed CI [-5.7, +0.7] consistent
+   gemma reads other gsm8k -> mmlu : predicted +2.0, observed -2.3, predicted - observed CI [+0.4, +8.1] differs
+   gemma reads other math  -> gsm8k: predicted +0.2, observed -0.1, predicted - observed CI [-0.6, +1.2] consistent
+   gemma reads other math  -> mmlu : predicted +2.3, observed -2.3, predicted - observed CI [+1.5, +7.9] differs
+   gemma reads other mmlu  -> gsm8k: predicted -0.8, observed -0.1, predicted - observed CI [-1.5, +0.2] consistent
+   gemma reads other mmlu  -> math : predicted -5.3, observed -1.3, predicted - observed CI [-6.7, -1.4] differs
+   gemma reads same  gsm8k -> math : predicted +3.2, observed +2.5, predicted - observed CI [-1.3, +2.5] consistent
+   gemma reads same  gsm8k -> mmlu : predicted +4.5, observed -0.8, predicted - observed CI [+2.1, +8.4] differs
+   gemma reads same  math  -> gsm8k: predicted +0.5, observed +0.5, predicted - observed CI [-0.6, +0.7] consistent
+   gemma reads same  math  -> mmlu : predicted +3.3, observed -0.8, predicted - observed CI [+1.4, +7.2] differs
+   gemma reads same  mmlu  -> gsm8k: predicted +0.0, observed +0.5, predicted - observed CI [-1.2, +0.2] consistent
+   gemma reads same  mmlu  -> math : predicted +0.4, observed +2.5, predicted - observed CI [-3.7, -0.5] differs
+   qwen reads other gsm8k -> math : predicted +9.6, observed +12.0, predicted - observed CI [-6.1, +1.2] consistent
+   qwen reads other gsm8k -> mmlu : predicted +7.2, observed +11.0, predicted - observed CI [-7.6, +0.1] consistent
+   qwen reads other math  -> gsm8k: predicted +2.0, observed +1.7, predicted - observed CI [-0.8, +1.2] consistent
+   qwen reads other math  -> mmlu : predicted +8.6, observed +11.0, predicted - observed CI [-5.9, +1.0] consistent
+   qwen reads other mmlu  -> gsm8k: predicted +2.5, observed +1.7, predicted - observed CI [-0.4, +1.8] consistent
+   qwen reads other mmlu  -> math : predicted +15.3, observed +12.0, predicted - observed CI [+0.4, +6.3] differs
+   qwen reads same  gsm8k -> math : predicted +2.0, observed +3.3, predicted - observed CI [-4.3, +1.5] consistent
+   qwen reads same  gsm8k -> mmlu : predicted +0.9, observed +1.5, predicted - observed CI [-3.6, +2.3] consistent
+   qwen reads same  math  -> gsm8k: predicted +0.6, observed +0.2, predicted - observed CI [-0.5, +1.2] consistent
+   qwen reads same  math  -> mmlu : predicted +1.5, observed +1.5, predicted - observed CI [-2.3, +2.5] consistent
+   qwen reads same  mmlu  -> gsm8k: predicted -0.2, observed +0.2, predicted - observed CI [-1.7, +0.9] consistent
+   qwen reads same  mmlu  -> math : predicted +3.2, observed +3.3, predicted - observed CI [-3.0, +2.6] consistent

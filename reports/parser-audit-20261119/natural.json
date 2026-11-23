@@ -1,0 +1,138 @@
+{
+ "gsm_dense": {
+  "0": {
+   "escaped_delims": 4.6,
+   "dollar_in_answer": 0.0,
+   "commas_in_answer": 0.0,
+   "latex_in_answer": 0.1,
+   "newline_inside": 1.3,
+   "braces_after_answer": 3.5,
+   "loop_5plus": 1.1,
+   "two_distinct_answers": 0.3,
+   "no_answer_marker": 4.1
+  },
+  "1": {
+   "escaped_delims": 10.9,
+   "dollar_in_answer": 0.0,
+   "commas_in_answer": 0.0,
+   "latex_in_answer": 0.0,
+   "newline_inside": 2.8,
+   "braces_after_answer": 8.5,
+   "loop_5plus": 9.9,
+   "two_distinct_answers": 3.3,
+   "no_answer_marker": 1.6
+  },
+  "2": {
+   "escaped_delims": 15.3,
+   "dollar_in_answer": 0.0,
+   "commas_in_answer": 0.0,
+   "latex_in_answer": 0.0,
+   "newline_inside": 3.3,
+   "braces_after_answer": 9.9,
+   "loop_5plus": 20.2,
+   "two_distinct_answers": 5.4,
+   "no_answer_marker": 2.0
+  },
+  "3": {
+   "escaped_delims": 17.1,
+   "dollar_in_answer": 0.0,
+   "commas_in_answer": 0.0,
+   "latex_in_answer": 0.0,
+   "newline_inside": 3.1,
+   "braces_after_answer": 11.2,
+   "loop_5plus": 28.1,
+   "two_distinct_answers": 8.0,
+   "no_answer_marker": 2.7
+  },
+  "4": {
+   "escaped_delims": 19.1,
+   "dollar_in_answer": 0.0,
+   "commas_in_answer": 0.0,
+   "latex_in_answer": 0.1,
+   "newline_inside": 2.7,
+   "braces_after_answer": 12.1,
+   "loop_5plus": 32.0,
+   "two_distinct_answers": 6.9,
+   "no_answer_marker": 2.5
+  },
+  "5": {
+   "escaped_delims": 19.5,
+   "dollar_in_answer": 0.0,
+   "commas_in_answer": 0.0,
+   "latex_in_answer": 0.1,
+   "newline_inside": 2.2,
+   "braces_after_answer": 12.7,
+   "loop_5plus": 33.3,
+   "two_distinct_answers": 7.3,
+   "no_answer_marker": 2.5
+  }
+ },
+ "gsm_sparse": {
+  "0": {
+   "escaped_delims": 4.3,
+   "dollar_in_answer": 0.0,
+   "commas_in_answer": 0.0,
+   "latex_in_answer": 0.0,
+   "newline_inside": 1.4,
+   "braces_after_answer": 2.8,
+   "loop_5plus": 1.3,
+   "two_distinct_answers": 0.3,
+   "no_answer_marker": 5.6
+  },
+  "1": {
+   "escaped_delims": 9.0,
+   "dollar_in_answer": 0.0,
+   "commas_in_answer": 0.0,
+   "latex_in_answer": 0.0,
+   "newline_inside": 2.6,
+   "braces_after_answer": 7.2,
+   "loop_5plus": 7.7,
+   "two_distinct_answers": 2.5,
+   "no_answer_marker": 3.3
+  },
+  "2": {
+   "escaped_delims": 12.9,
+   "dollar_in_answer": 0.0,
+   "commas_in_answer": 0.0,
+   "latex_in_answer": 0.1,
+   "newline_inside": 2.8,
+   "braces_after_answer": 6.7,
+   "loop_5plus": 16.9,
+   "two_distinct_answers": 5.7,
+   "no_answer_marker": 2.4
+  },
+  "3": {
+   "escaped_delims": 14.3,
+   "dollar_in_answer": 0.0,
+   "commas_in_answer": 0.0,
+   "latex_in_answer": 0.0,
+   "newline_inside": 3.3,
+   "braces_after_answer": 8.3,
+   "loop_5plus": 22.9,
+   "two_distinct_answers": 6.5,
+   "no_answer_marker": 2.5
+  },
+  "4": {
+   "escaped_delims": 16.3,
+   "dollar_in_answer": 0.0,
+   "commas_in_answer": 0.0,
+   "latex_in_answer": 0.1,
+   "newline_inside": 3.3,
+   "braces_after_answer": 10.1,
+   "loop_5plus": 25.5,
+   "two_distinct_answers": 5.9,
+   "no_answer_marker": 3.3
+  },
+  "5": {
+   "escaped_delims": 17.8,
+   "dollar_in_answer": 0.0,
+   "commas_in_answer": 0.0,
+   "latex_in_answer": 0.1,
+   "newline_inside": 3.0,
+   "braces_after_answer": 9.7,
+   "loop_5plus": 28.7,
+   "two_distinct_answers": 8.0,
+   "no_answer_marker": 3.1
+  }
+ }
+}

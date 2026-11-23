@@ -1,0 +1,26 @@
+[
+    {
+        "round_1": {
+            "llama-3.1-8b-chat_agent_0": 0.87,
+            "mistral-7b_agent_0": 0.35,
+            "mistral-7b_agent_1": 0.34,
+            "majority_vote": 0.86
+        }
+    },
+    {
+        "round_2": {
+            "llama-3.1-8b-chat_agent_0": 0.63,
+            "mistral-7b_agent_0": 0.53,
+            "mistral-7b_agent_1": 0.44,
+            "majority_vote": 0.71
+        }
+    },
+    {
+        "round_3": {
+            "llama-3.1-8b-chat_agent_0": 0.69,
+            "mistral-7b_agent_0": 0.47,
+            "mistral-7b_agent_1": 0.43,
+            "majority_vote": 0.68
+        }
+    }
+]

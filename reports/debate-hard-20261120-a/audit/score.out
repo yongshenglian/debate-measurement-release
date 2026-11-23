@@ -1,0 +1,3 @@
+H_ans              agreement on recovered 84/90 = 93.3%  FAIL  | our reader none but Gemma reads a number: 7/100
+H_dovword          agreement on recovered 92/94 = 97.9%  PASS  | our reader none but Gemma reads a number: 5/100
+H_full             agreement on recovered 89/91 = 97.8%  PASS  | our reader none but Gemma reads a number: 3/100

@@ -1,0 +1,9 @@
+2026-11-17T07:09:31-05:00 finalizer_started
+2026-11-17T07:11:42-05:00 finalizer_started
+0
+0
+0
+0
+Using the latest cached version of the dataset since openai/gsm8k couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'main' at /data/openai___gsm8k/main/0.0.0/740312add88f781978c0658806c59bc2815b9866 (last modified on Tue Nov 17 03:24:27 2026).
+2026-11-17T08:46:45-05:00 final_log_audit_exit_0

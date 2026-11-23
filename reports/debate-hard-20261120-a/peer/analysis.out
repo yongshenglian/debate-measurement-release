@@ -1,0 +1,21 @@
+
+== reviewer qwen: 598 of 600 tasks analysed; invalid outputs {'solve_s0': 1, 'solve_s1': 1, 'review': {'self': 0, 'peer_qwen': 0, 'peer_gemma': 0}}
+   first answer 64.7%  |  self 65.2%  peer_qwen 68.1%  peer_gemma 76.8%
+   peer_qwen - self: +2.8 [+0.3, +5.4]
+   peer_gemma - self: +11.5 [+8.5, +14.5]
+   self - first answer: +0.5 [-0.3, +1.3]
+   [self] corruption: 0.5% (2/387); rescue: 2.4% (5/211)
+   [peer_qwen] corruption: 4.7% (18/387); rescue: 18.0% (38/211); corruption|peer wrong: 34.6% (18/52); followed wrong peer|own right: 28.8% (15/52); corruption|peer right: 0.0% (0/335); rescue|peer right: 58.5% (38/65)
+   [peer_gemma] corruption: 2.3% (9/387); rescue: 38.4% (81/211); corruption|peer wrong: 47.1% (8/17); followed wrong peer|own right: 41.2% (7/17); corruption|peer right: 0.3% (1/370); rescue|peer right: 58.2% (78/134)
+
+== reviewer gemma: 599 of 600 tasks analysed; invalid outputs {'solve_s0': 0, 'solve_s1': 0, 'review': {'self': 0, 'peer_qwen': 0, 'peer_gemma': 0}}
+   first answer 84.1%  |  self 84.3%  peer_qwen 82.8%  peer_gemma 86.6%
+   peer_qwen - self: -1.5 [-3.3, +0.3]
+   peer_gemma - self: +2.3 [+0.5, +4.3]
+   self - first answer: +0.2 [-0.8, +1.2]
+   [self] corruption: 0.8% (4/504); rescue: 5.3% (5/95)
+   [peer_qwen] corruption: 4.2% (21/504); rescue: 13.7% (13/95); corruption|peer wrong: 15.7% (21/134); followed wrong peer|own right: 14.2% (19/134); corruption|peer right: 0.0% (0/370); rescue|peer right: 52.9% (9/17)
+   [peer_gemma] corruption: 1.8% (9/504); rescue: 25.3% (24/95); corruption|peer wrong: 34.8% (8/23); followed wrong peer|own right: 34.8% (8/23); corruption|peer right: 0.2% (1/481); rescue|peer right: 77.8% (21/27)
+
+PRIMARY R1 (gemma reads qwen): -1.5 [-3.3, +0.3]
+MIRROR  R2 (qwen reads gemma): +11.5 [+8.5, +14.5]

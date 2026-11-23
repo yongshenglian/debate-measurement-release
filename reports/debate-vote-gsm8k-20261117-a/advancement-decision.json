@@ -1,0 +1,20 @@
+{
+  "analysis_version": "paired-audit-v4",
+  "baseline_run": "/home/lian/swarmworld/research/reports/debate-vote-gsm8k-20261117-a",
+  "decision": "proceed_kv_calibration",
+  "decided_local": "2026-11-17T08:55:09-05:00",
+  "evidence_sha256": {
+    "final-log-source-audit.json": "bd6c924e7a7bbeb2e06b3c2a35197ef7b368b39478b33bd49eb079f5213092c5",
+    "paired-audit-v4.json": "7de3e1873f684ea4fe95e578df148627e938b637248f1b7d50f11a73e779952b",
+    "source-history-audit.json": "7affe4096250129dcce89383ae522cd0c470d30c90fa08a1d467f389e6d6035c"
+  },
+  "gate_evidence": {
+    "dense_best_later_minus_round0": -0.006666666666666599,
+    "dense_round0_vote_minus_individual": 0.12,
+    "sparse_best_later_minus_round0": 0.00666666666666671,
+    "sparse_best_later_paired_ci95": [-0.016666666666666666, 0.03],
+    "sparse_round0_vote_minus_individual": 0.10133333333333328
+  },
+  "interpretation": "The published qualitative ordering is reproduced: independent voting strongly exceeds mean individual output, while later communication does not clearly exceed its own round-zero vote and longer debate degrades accuracy.",
+  "scope": "Authorizes only the bounded technical/mechanism calibration after the amended private-revision control and BF16/FP8 runtime smoke pass; it does not authorize confirmation or a broad collaboration claim."
+}

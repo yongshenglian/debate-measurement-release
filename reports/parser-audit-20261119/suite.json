@@ -1,0 +1,504 @@
+{
+ "dov": {
+  "canonical": {
+   "n": 300,
+   "read": 299,
+   "fail": 1,
+   "misread": 0,
+   "scored_correct": 299
+  },
+  "escaped_delims": {
+   "n": 300,
+   "read": 0,
+   "fail": 300,
+   "misread": 0,
+   "scored_correct": 0
+  },
+  "latex_text": {
+   "n": 300,
+   "read": 0,
+   "fail": 300,
+   "misread": 0,
+   "scored_correct": 0
+  },
+  "units_$": {
+   "n": 300,
+   "read": 0,
+   "fail": 300,
+   "misread": 0,
+   "scored_correct": 0
+  },
+  "commas": {
+   "n": 300,
+   "read": 0,
+   "fail": 300,
+   "misread": 0,
+   "scored_correct": 0
+  },
+  "decimal_.00": {
+   "n": 300,
+   "read": 299,
+   "fail": 1,
+   "misread": 0,
+   "scored_correct": 299
+  },
+  "newline_inside": {
+   "n": 300,
+   "read": 2,
+   "fail": 222,
+   "misread": 76,
+   "scored_correct": 2
+  },
+  "trailing_braces": {
+   "n": 300,
+   "read": 0,
+   "fail": 300,
+   "misread": 0,
+   "scored_correct": 0
+  },
+  "peer_after": {
+   "n": 300,
+   "read": 0,
+   "fail": 0,
+   "misread": 300,
+   "scored_correct": 0
+  },
+  "peer_before": {
+   "n": 300,
+   "read": 300,
+   "fail": 0,
+   "misread": 0,
+   "scored_correct": 300
+  },
+  "loop_truncated": {
+   "n": 300,
+   "read": 300,
+   "fail": 0,
+   "misread": 0,
+   "scored_correct": 300
+  },
+  "format_ignored": {
+   "n": 300,
+   "read": 2,
+   "fail": 222,
+   "misread": 76,
+   "scored_correct": 2
+  }
+ },
+ "du": {
+  "canonical": {
+   "n": 300,
+   "read": 299,
+   "fail": 0,
+   "misread": 1,
+   "scored_correct": 299
+  },
+  "escaped_delims": {
+   "n": 300,
+   "read": 180,
+   "fail": 0,
+   "misread": 120,
+   "scored_correct": 180
+  },
+  "latex_text": {
+   "n": 300,
+   "read": 299,
+   "fail": 0,
+   "misread": 1,
+   "scored_correct": 299
+  },
+  "units_$": {
+   "n": 300,
+   "read": 299,
+   "fail": 0,
+   "misread": 1,
+   "scored_correct": 299
+  },
+  "commas": {
+   "n": 300,
+   "read": 299,
+   "fail": 0,
+   "misread": 1,
+   "scored_correct": 299
+  },
+  "decimal_.00": {
+   "n": 300,
+   "read": 299,
+   "fail": 0,
+   "misread": 1,
+   "scored_correct": 299
+  },
+  "newline_inside": {
+   "n": 300,
+   "read": 180,
+   "fail": 0,
+   "misread": 120,
+   "scored_correct": 180
+  },
+  "trailing_braces": {
+   "n": 300,
+   "read": 8,
+   "fail": 0,
+   "misread": 292,
+   "scored_correct": 8
+  },
+  "peer_after": {
+   "n": 300,
+   "read": 0,
+   "fail": 0,
+   "misread": 300,
+   "scored_correct": 0
+  },
+  "peer_before": {
+   "n": 300,
+   "read": 299,
+   "fail": 0,
+   "misread": 1,
+   "scored_correct": 299
+  },
+  "loop_truncated": {
+   "n": 300,
+   "read": 299,
+   "fail": 0,
+   "misread": 1,
+   "scored_correct": 299
+  },
+  "format_ignored": {
+   "n": 300,
+   "read": 180,
+   "fail": 0,
+   "misread": 120,
+   "scored_correct": 180
+  }
+ },
+ "wynn": {
+  "canonical": {
+   "n": 300,
+   "read": 299,
+   "fail": 0,
+   "misread": 1,
+   "scored_correct": 299
+  },
+  "escaped_delims": {
+   "n": 300,
+   "read": 3,
+   "fail": 177,
+   "misread": 120,
+   "scored_correct": 3
+  },
+  "latex_text": {
+   "n": 300,
+   "read": 299,
+   "fail": 0,
+   "misread": 1,
+   "scored_correct": 299
+  },
+  "units_$": {
+   "n": 300,
+   "read": 299,
+   "fail": 0,
+   "misread": 1,
+   "scored_correct": 299
+  },
+  "commas": {
+   "n": 300,
+   "read": 299,
+   "fail": 0,
+   "misread": 1,
+   "scored_correct": 299
+  },
+  "decimal_.00": {
+   "n": 300,
+   "read": 299,
+   "fail": 0,
+   "misread": 1,
+   "scored_correct": 299
+  },
+  "newline_inside": {
+   "n": 300,
+   "read": 3,
+   "fail": 177,
+   "misread": 120,
+   "scored_correct": 3
+  },
+  "trailing_braces": {
+   "n": 300,
+   "read": 8,
+   "fail": 0,
+   "misread": 292,
+   "scored_correct": 8
+  },
+  "peer_after": {
+   "n": 300,
+   "read": 0,
+   "fail": 0,
+   "misread": 300,
+   "scored_correct": 0
+  },
+  "peer_before": {
+   "n": 300,
+   "read": 299,
+   "fail": 0,
+   "misread": 1,
+   "scored_correct": 299
+  },
+  "loop_truncated": {
+   "n": 300,
+   "read": 299,
+   "fail": 0,
+   "misread": 1,
+   "scored_correct": 299
+  },
+  "format_ignored": {
+   "n": 300,
+   "read": 3,
+   "fail": 177,
+   "misread": 120,
+   "scored_correct": 3
+  }
+ },
+ "dmad": {
+  "canonical": {
+   "n": 300,
+   "read": 300,
+   "fail": 0,
+   "misread": 0,
+   "scored_correct": 300
+  },
+  "escaped_delims": {
+   "n": 300,
+   "read": 0,
+   "fail": 300,
+   "misread": 0,
+   "scored_correct": 0
+  },
+  "latex_text": {
+   "n": 300,
+   "read": 300,
+   "fail": 0,
+   "misread": 0,
+   "scored_correct": 300
+  },
+  "units_$": {
+   "n": 300,
+   "read": 300,
+   "fail": 0,
+   "misread": 0,
+   "scored_correct": 300
+  },
+  "commas": {
+   "n": 300,
+   "read": 300,
+   "fail": 0,
+   "misread": 0,
+   "scored_correct": 300
+  },
+  "decimal_.00": {
+   "n": 300,
+   "read": 300,
+   "fail": 0,
+   "misread": 0,
+   "scored_correct": 300
+  },
+  "newline_inside": {
+   "n": 300,
+   "read": 300,
+   "fail": 0,
+   "misread": 0,
+   "scored_correct": 300
+  },
+  "trailing_braces": {
+   "n": 300,
+   "read": 300,
+   "fail": 0,
+   "misread": 0,
+   "scored_correct": 300
+  },
+  "peer_after": {
+   "n": 300,
+   "read": 300,
+   "fail": 0,
+   "misread": 0,
+   "scored_correct": 300
+  },
+  "peer_before": {
+   "n": 300,
+   "read": 0,
+   "fail": 0,
+   "misread": 300,
+   "scored_correct": 0
+  },
+  "loop_truncated": {
+   "n": 300,
+   "read": 300,
+   "fail": 0,
+   "misread": 0,
+   "scored_correct": 300
+  },
+  "format_ignored": {
+   "n": 300,
+   "read": 0,
+   "fail": 300,
+   "misread": 0,
+   "scored_correct": 0
+  }
+ },
+ "rec": {
+  "canonical": {
+   "n": 300,
+   "read": 300,
+   "fail": 0,
+   "misread": 0,
+   "scored_correct": 300
+  },
+  "units_$": {
+   "n": 300,
+   "read": 300,
+   "fail": 0,
+   "misread": 0,
+   "scored_correct": 300
+  },
+  "commas": {
+   "n": 300,
+   "read": 300,
+   "fail": 0,
+   "misread": 0,
+   "scored_correct": 300
+  },
+  "decimal_.00": {
+   "n": 300,
+   "read": 300,
+   "fail": 0,
+   "misread": 0,
+   "scored_correct": 300
+  },
+  "newline_inside": {
+   "n": 300,
+   "read": 300,
+   "fail": 0,
+   "misread": 0,
+   "scored_correct": 300
+  },
+  "trailing_braces": {
+   "n": 300,
+   "read": 0,
+   "fail": 300,
+   "misread": 0,
+   "scored_correct": 0
+  },
+  "peer_after": {
+   "n": 300,
+   "read": 0,
+   "fail": 300,
+   "misread": 0,
+   "scored_correct": 0
+  },
+  "peer_before": {
+   "n": 300,
+   "read": 0,
+   "fail": 300,
+   "misread": 0,
+   "scored_correct": 0
+  },
+  "loop_truncated": {
+   "n": 300,
+   "read": 0,
+   "fail": 300,
+   "misread": 0,
+   "scored_correct": 0
+  },
+  "format_ignored": {
+   "n": 300,
+   "read": 0,
+   "fail": 300,
+   "misread": 0,
+   "scored_correct": 0
+  }
+ },
+ "wdh": {
+  "canonical": {
+   "n": 300,
+   "read": 300,
+   "fail": 0,
+   "misread": 0,
+   "scored_correct": 300
+  },
+  "escaped_delims": {
+   "n": 300,
+   "read": 300,
+   "fail": 0,
+   "misread": 0,
+   "scored_correct": 300
+  },
+  "latex_text": {
+   "n": 300,
+   "read": 300,
+   "fail": 0,
+   "misread": 0,
+   "scored_correct": 300
+  },
+  "units_$": {
+   "n": 300,
+   "read": 300,
+   "fail": 0,
+   "misread": 0,
+   "scored_correct": 300
+  },
+  "commas": {
+   "n": 300,
+   "read": 300,
+   "fail": 0,
+   "misread": 0,
+   "scored_correct": 300
+  },
+  "decimal_.00": {
+   "n": 300,
+   "read": 300,
+   "fail": 0,
+   "misread": 0,
+   "scored_correct": 300
+  },
+  "newline_inside": {
+   "n": 300,
+   "read": 300,
+   "fail": 0,
+   "misread": 0,
+   "scored_correct": 300
+  },
+  "trailing_braces": {
+   "n": 300,
+   "read": 300,
+   "fail": 0,
+   "misread": 0,
+   "scored_correct": 300
+  },
+  "peer_after": {
+   "n": 300,
+   "read": 0,
+   "fail": 0,
+   "misread": 300,
+   "scored_correct": 0
+  },
+  "peer_before": {
+   "n": 300,
+   "read": 300,
+   "fail": 0,
+   "misread": 0,
+   "scored_correct": 300
+  },
+  "loop_truncated": {
+   "n": 300,
+   "read": 300,
+   "fail": 0,
+   "misread": 0,
+   "scored_correct": 300
+  },
+  "format_ignored": {
+   "n": 300,
+   "read": 300,
+   "fail": 0,
+   "misread": 0,
+   "scored_correct": 300
+  }
+ }
+}

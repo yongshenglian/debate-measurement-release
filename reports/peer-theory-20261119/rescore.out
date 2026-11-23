@@ -1,0 +1,52 @@
+== GSM8K dense (n=300)
+  original round 0: individual 0.797  empty  153  vote 0.920
+  original round 1: individual 0.784  empty  223  vote 0.914  vote − round0 -0.006 [-0.030, +0.019]
+  original round 2: individual 0.771  empty  246  vote 0.912  vote − round0 -0.009 [-0.037, +0.019]
+  original round 3: individual 0.749  empty  284  vote 0.872  vote − round0 -0.049 [-0.084, -0.014]
+  original round 4: individual 0.730  empty  307  vote 0.872  vote − round0 -0.049 [-0.086, -0.013]
+  original round 5: individual 0.735  empty  306  vote 0.867  vote − round0 -0.054 [-0.092, -0.016]
+  robust   round 0: individual 0.863  empty   45  vote 0.926
+  robust   round 1: individual 0.919  empty   26  vote 0.932  vote − round0 +0.007 [-0.010, +0.025]
+  robust   round 2: individual 0.919  empty   29  vote 0.937  vote − round0 +0.011 [-0.010, +0.032]
+  robust   round 3: individual 0.916  empty   35  vote 0.930  vote − round0 +0.004 [-0.018, +0.027]
+  robust   round 4: individual 0.911  empty   41  vote 0.932  vote − round0 +0.006 [-0.018, +0.030]
+  robust   round 5: individual 0.915  empty   34  vote 0.930  vote − round0 +0.004 [-0.022, +0.030]
+== GSM8K sparse (n=300)
+  original round 0: individual 0.812  empty  132  vote 0.918
+  original round 1: individual 0.797  empty  182  vote 0.922  vote − round0 +0.004 [-0.013, +0.022]
+  original round 2: individual 0.780  empty  214  vote 0.912  vote − round0 -0.006 [-0.031, +0.018]
+  original round 3: individual 0.760  empty  248  vote 0.893  vote − round0 -0.025 [-0.054, +0.002]
+  original round 4: individual 0.746  empty  264  vote 0.888  vote − round0 -0.030 [-0.062, +0.002]
+  original round 5: individual 0.731  empty  300  vote 0.867  vote − round0 -0.051 [-0.083, -0.021]
+  robust   round 0: individual 0.860  empty   51  vote 0.915
+  robust   round 1: individual 0.894  empty   36  vote 0.928  vote − round0 +0.013 [-0.004, +0.032]
+  robust   round 2: individual 0.905  empty   28  vote 0.928  vote − round0 +0.013 [-0.010, +0.037]
+  robust   round 3: individual 0.905  empty   33  vote 0.928  vote − round0 +0.013 [-0.010, +0.039]
+  robust   round 4: individual 0.903  empty   37  vote 0.922  vote − round0 +0.007 [-0.018, +0.033]
+  robust   round 5: individual 0.907  empty   40  vote 0.930  vote − round0 +0.015 [-0.008, +0.040]
+== Arithmetic dense (n=100)
+  original round 0: individual 0.820  empty   72  vote 0.993
+  original round 1: individual 0.736  empty  125  vote 0.970  vote − round0 -0.023 [-0.060, +0.007]
+  original round 2: individual 0.714  empty  138  vote 0.925  vote − round0 -0.068 [-0.120, -0.027]
+  original round 3: individual 0.700  empty  147  vote 0.860  vote − round0 -0.133 [-0.210, -0.067]
+  original round 4: individual 0.668  empty  163  vote 0.840  vote − round0 -0.153 [-0.233, -0.083]
+  original round 5: individual 0.668  empty  161  vote 0.830  vote − round0 -0.163 [-0.243, -0.090]
+  robust   round 0: individual 0.952  empty    7  vote 1.000
+  robust   round 1: individual 0.980  empty    1  vote 0.990  vote − round0 -0.010 [-0.030, +0.000]
+  robust   round 2: individual 0.980  empty    1  vote 0.990  vote − round0 -0.010 [-0.030, +0.000]
+  robust   round 3: individual 0.978  empty    5  vote 0.990  vote − round0 -0.010 [-0.030, +0.000]
+  robust   round 4: individual 0.974  empty    5  vote 0.980  vote − round0 -0.020 [-0.050, +0.000]
+  robust   round 5: individual 0.970  empty    5  vote 0.980  vote − round0 -0.020 [-0.050, +0.000]
+== Arithmetic sparse (n=100)
+  original round 0: individual 0.768  empty   80  vote 0.995
+  original round 1: individual 0.726  empty  124  vote 0.970  vote − round0 -0.025 [-0.065, +0.005]
+  original round 2: individual 0.740  empty  118  vote 0.960  vote − round0 -0.035 [-0.075, +0.000]
+  original round 3: individual 0.754  empty  112  vote 0.965  vote − round0 -0.030 [-0.070, +0.000]
+  original round 4: individual 0.736  empty  117  vote 0.955  vote − round0 -0.040 [-0.085, -0.005]
+  original round 5: individual 0.706  empty  132  vote 0.905  vote − round0 -0.090 [-0.150, -0.035]
+  robust   round 0: individual 0.928  empty    4  vote 1.000
+  robust   round 1: individual 0.980  empty    4  vote 0.990  vote − round0 -0.010 [-0.030, +0.000]
+  robust   round 2: individual 0.974  empty    4  vote 0.980  vote − round0 -0.020 [-0.050, +0.000]
+  robust   round 3: individual 0.980  empty    3  vote 0.990  vote − round0 -0.010 [-0.030, +0.000]
+  robust   round 4: individual 0.972  empty    5  vote 0.980  vote − round0 -0.020 [-0.050, +0.000]
+  robust   round 5: individual 0.966  empty    8  vote 0.980  vote − round0 -0.020 [-0.050, +0.000]

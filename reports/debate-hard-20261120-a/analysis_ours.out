@@ -1,0 +1,13 @@
+reading: ours only
+== H_vote20: vote of 20 73.8 | vote of first 5 67.0 | individual 55.6 | 20 - 5: +6.8 [+3.4, +10.3]
+== H_full: vote by round 67.9 66.7 66.1 65.8 | individual 56.5 63.7 64.6 64.3 | no answer % 9.4 4.9 4.3 3.8
+   P1 final - r0 vote -2.1 [-5.2, +0.9] | P2 G4 gate - r0 -1.4 [-4.4, +1.5] | final - vote20 -7.9 [-11.9, -4.2] | G4 - vote20 -7.3 [-11.2, -3.6]
+   rescued/broken by r0 agreement: 5/5 (n=96): +0.0 / -0.0; 4/5 (n=53): +0.0 / -2.0; <=3/5 (n=151): +9.9 / -14.2
+== H_ans: vote by round 69.0 70.1 69.6 69.2 | individual 55.3 60.8 61.5 61.5 | no answer % 10.4 7.7 6.9 6.8
+   P1 final - r0 vote +0.1 [-2.7, +2.8] | P2 G4 gate - r0 +0.4 [-2.2, +3.1] | final - vote20 -4.6 [-8.2, -1.2] | G4 - vote20 -4.3 [-7.8, -0.9]
+   rescued/broken by r0 agreement: 5/5 (n=89): +0.0 / -0.0; 4/5 (n=56): +0.0 / -1.0; <=3/5 (n=155): +10.9 / -9.6
+== H_dovword: vote by round 68.4 67.7 66.3 66.1 | individual 55.7 63.1 64.6 65.3 | no answer % 10.5 5.3 4.2 3.7
+   P1 final - r0 vote -2.4 [-5.8, +1.0] | P2 G4 gate - r0 -2.4 [-5.7, +0.8] | final - vote20 -7.7 [-11.5, -4.0] | G4 - vote20 -7.7 [-11.4, -4.2]
+   rescued/broken by r0 agreement: 5/5 (n=79): +0.0 / -0.0; 4/5 (n=67): +1.0 / -1.0; <=3/5 (n=154): +11.2 / -18.2
+   contrast H_ans - H_full on P1: +2.2 [-1.8, +6.3]  p=0.2822  Holm=0.5644
+   contrast H_dovword - H_full on P1: -0.3 [-5.1, +4.7]  p=0.9045  Holm=0.9045

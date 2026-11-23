@@ -1,0 +1,33 @@
+
+== recipient qwen: 312 tasks; own first answer right 212; max padding deviation 0 tokens; invalid answers 0
+   C_answer 76.6  C_full 86.2  C_full_check 87.8  C_full_indep 85.9  C_full_warn 83.7  E_answer 66.7  E_confident 59.3  E_full 63.5  E_full_check 61.5  E_full_indep 67.3  E_full_warn 66.0  E_hedged 65.4  private 68.6
+   corruption | own right: C_answer 1.4%  C_full 0.0%  C_full_check 0.0%  C_full_indep 0.5%  C_full_warn 0.5%  E_answer 3.3%  E_confident 17.0%  E_full 12.7%  E_full_check 14.6%  E_full_indep 8.5%  E_full_warn 9.9%  E_hedged 10.4%
+   adopts E's answer | own right: E_answer 2.8%  E_confident 15.6%  E_full 12.7%  E_full_check 12.7%  E_full_indep 7.1%  E_full_warn 9.0%  E_hedged 9.4%
+   T1 E_full - private          -5.1 [-9.3, -1.0]  p=0.0130 Holm=0.0390  PRIMARY  (GSM8K -14.1)
+   T2a E_answer - private       -1.9 [-4.5, +0.3]  90% CI [-3.8, +0.0] -> not shown equivalent
+   T2b E_full - E_answer        -3.2 [-7.4, +1.0]  p=0.1555 Holm=0.3110  PRIMARY
+   T5 C_full - C_answer         +9.6 [+5.4, +13.8]  p=0.0000 Holm=0.0000  PRIMARY
+   T1c C_full - private         +17.6 [+13.1, +22.1]
+   T4 indep net                 +1.8 [-1.0, +4.5]  p=0.2308 Holm=0.3110  PRIMARY  (GSM8K +3.0)
+   T4 indep: E                  +3.8 [+0.0, +7.7]
+   T4 indep: C                  -0.3 [-3.8, +3.2]
+   T4 check net                 -0.2 [-2.7, +2.4]  (GSM8K +3.2)
+   T4 check: E                  -1.9 [-5.8, +1.9]
+   T4 check: C                  +1.6 [-1.6, +4.8]
+   T4 warn net                  +0.0 [-2.6, +2.6]  (GSM8K +0.7)
+   T4 warn: E                   +2.6 [-1.3, +6.4]
+   T4 warn: C                   -2.6 [-5.8, +0.6]
+   T3 E_confident - E_hedged    -6.1 [-10.6, -1.6]  p=0.0092 Holm=0.0368  PRIMARY  (GSM8K -12.0)
+
+== recipient gemma: 296 tasks; own first answer right 270; max padding deviation 0 tokens; invalid answers 0
+   C_answer 95.6  C_full 98.0  C_full_indep 96.3  E_answer 89.9  E_full 92.2  E_full_indep 91.6  private 92.6
+   corruption | own right: C_answer 0.4%  C_full 0.0%  C_full_indep 0.0%  E_answer 2.6%  E_full 1.9%  E_full_indep 1.9%
+   adopts E's answer | own right: E_answer 2.2%  E_full 1.5%  E_full_indep 0.7%
+   T1 E_full - private          -0.3 [-2.7, +1.7]  p=0.8746 Holm=0.8746  PRIMARY  (GSM8K -14.1)
+   T2a E_answer - private       -2.7 [-5.1, -0.7]  90% CI [-4.7, -1.0] -> not shown equivalent
+   T2b E_full - E_answer        +2.4 [-0.3, +5.1]  p=0.1258 Holm=0.3774  PRIMARY
+   T5 C_full - C_answer         +2.4 [+0.3, +4.7]  p=0.0351 Holm=0.1404  PRIMARY
+   T1c C_full - private         +5.4 [+3.0, +8.1]
+   T4 indep net                 -1.2 [-2.9, +0.5]  p=0.2019 Holm=0.4038  PRIMARY  (GSM8K +3.0)
+   T4 indep: E                  -0.7 [-3.4, +2.0]
+   T4 indep: C                  -1.7 [-3.7, +0.3]

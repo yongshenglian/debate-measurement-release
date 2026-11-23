@@ -1,0 +1,12 @@
+{
+  "accuracy": 0.81,
+  "correct": 243,
+  "empty_extractions": 27,
+  "expected_rows": 300,
+  "history_rows": 300,
+  "history_sha256": "7e43100f95ff811c160610b0013ae1c3a4b6dd39c5476e6d626919fac27765d7",
+  "logged_questions": 300,
+  "passed": true,
+  "problems": [],
+  "questions_match": true
+}

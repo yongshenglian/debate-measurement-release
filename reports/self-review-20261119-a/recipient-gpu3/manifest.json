@@ -1,0 +1,105 @@
+{
+  "code_sha256": {
+    "kv_io.py": "9f18c07afb2fd7726c5d45f2f8da737f976001510a530b42383aa2097c402938",
+    "kv_runtime.py": "6eaf7f03daea0c27c4e7ef1f070d199a25423bf72973ee48f65763f4675e7414",
+    "kv_task.py": "7b16b8e30304040afc6e537a7df700a51b0d1f0784ec0592ef829f2c68855562",
+    "pc_contract.py": "95c29bea6aa18ea1f71d426e350c322846b25dadfa4a47f83024d25a96c7df39",
+    "pc_design.py": "93ed1f68ccd249d6aad325169e96b396791025edc890fb65d12bf8a15f6dc0b3",
+    "pc_freeze.py": "3236d3a412a48a4e4d388b5932cc9a0eedd9c21a2c85d3d0015c09a30a4b9812",
+    "pc_runtime.py": "44e9657aaaff92321fcfe158cfd42ac3b5aa58c6d4a52f4ccb748b3c0e78b2f3",
+    "pc_task.py": "4a5728665510657a8e02b6f061cf0bca874c95a7670a72562f4110579cd57257",
+    "pd_contract.py": "85f53ad2b8955402f33c42855f88724a0ae4bdf6a05b40d592d00718376376e9",
+    "pd_design.py": "5eee4a42efd1d7b4fa96625434b8b85b16e7cff86ae9291e10dc9ce8c46394e4",
+    "pd_runtime.py": "9d3b8f0c1c30573b3941a76e6539ac13d69e234ca5639f3eb2bbbcbca728402d",
+    "pd_stimuli.py": "4567d1aed4df80c3c32ee9c33a53424f627d44e82b49f06a09f2b776edec3e5d",
+    "pe_audit.py": "15d8117b6a2cc61adfe3fbfaa6d07c0ca575add967baa89c18d42104b4d1dd24",
+    "pe_design.py": "4ea6541ad30d9828c83ba383f91931e53bb97305aa3618629a201d6563f12750",
+    "pe_freeze.py": "8420aeadf84a2938336971745d2e3437e1369ad775a1dad8ffe075dfb2af78f0",
+    "pe_task.py": "909ff404a5e94418c10af57d78130ee391ae0ed4bbe68ba328bd1689c7b637bd",
+    "pp_contract.py": "09a70d24786dbba166c4efaf9d5e0790daf53752d2c07b6b4c195491a270f6a0",
+    "pp_design.py": "a66298884155933410bd2eaf9d9764f973439b01d4c235b64857b2f3ab636fe1",
+    "pw_audit.py": "c5309d56350e5bff5b2f23e78acd3886b41a9dc86add445edff61a9c0fcaf0cb",
+    "pw_contract.py": "5e34753f1e70808b9a2e953e1a20b67a0d52c0d210cce4b88cc9e9c2e2f498c5",
+    "pw_design.py": "2ad33ebca39c774195261fb4627e2587c2cd838c940964351afd9c5da6ccd17f",
+    "pw_schedule.py": "c3b88ec5cbcdbfb24d9bc2ff79b2363dbbd3c06060bb27dec626ddd1cf9fcfeb",
+    "pw_worker.py": "e21772aab226e8dce6994e30eb8075025113ecb37a346dbd4545927626f28a1b",
+    "sr_audit.py": "ddad8fe8160cf3c7f27f31ea9ad7a1b89f24ea64f4deefbd951c4f47fdf1c148",
+    "sr_contract.py": "1f9cf1a7b1f327219c14857250b336e8547452b434a8f68bcdc9a49d8b7527fd",
+    "sr_design.py": "d40e1fb5d9390ba5e7741b8cb5a62c09f5169612453da73f7e753efa6991962f",
+    "sr_schedule.py": "a179218e0ceda6ec9d1a67bd99536e0e047423f6445f4f7a7959a81d671dd8de",
+    "sr_worker.py": "99a91bc6795837d24a8806685cc4755a3f9eb5754f4f9fa794353ad017bea70f"
+  },
+  "expected_calls": 1288,
+  "family": "qwen",
+  "gpu": 3,
+  "model_manifest": {
+    "files": [
+      {
+        "bytes": 663,
+        "path": "config.json",
+        "sha256": "7463bb0ea78315365e6c6b74de4e73bbcc8359dfb0c5a737584e077d42c0b03c"
+      },
+      {
+        "bytes": 243,
+        "path": "generation_config.json",
+        "sha256": "3a8f9087e486054c8a4a08dae2e5a3ba62e23da212b5b8c08bc42cb983c3459f"
+      },
+      {
+        "bytes": 1671839,
+        "path": "merges.txt",
+        "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3"
+      },
+      {
+        "bytes": 3945441440,
+        "path": "model-00001-of-00004.safetensors",
+        "sha256": "a1333e6293854747c481288ea83b348226af178dd565c49b6f9495ba1966aba7"
+      },
+      {
+        "bytes": 3864726352,
+        "path": "model-00002-of-00004.safetensors",
+        "sha256": "f5d25a2772cb825164a2a2c0fb6d51a87e282abf21e4dd75bc5cfb3cd0ea6185"
+      },
+      {
+        "bytes": 3864726424,
+        "path": "model-00003-of-00004.safetensors",
+        "sha256": "8efdec4c1bc12317ae1a38dc42b595ce777738a64deea3fcb8a0a91381bcdfd5"
+      },
+      {
+        "bytes": 3556377672,
+        "path": "model-00004-of-00004.safetensors",
+        "sha256": "1a72d403cdf0c1ec3cb7f289f17b394a01e64394c2e9b3c0f94dbce3faf879bd"
+      },
+      {
+        "bytes": 27752,
+        "path": "model.safetensors.index.json",
+        "sha256": "624bf7c47cd12468fdc16e38a47cf4f19e0415b859a223ba3c027eed2f0e1028"
+      },
+      {
+        "bytes": 7031645,
+        "path": "tokenizer.json",
+        "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+      },
+      {
+        "bytes": 7305,
+        "path": "tokenizer_config.json",
+        "sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+      },
+      {
+        "bytes": 2776833,
+        "path": "vocab.json",
+        "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      }
+    ],
+    "repo": "Qwen/Qwen2.5-7B-Instruct",
+    "revision": "a09a35458c702b33eeacc393d103063234e8bc28"
+  },
+  "packages": {
+    "llguidance": "1.7.6",
+    "tokenizers": "0.23.2",
+    "torch": "2.13.0+cu130",
+    "transformers": "5.16.1",
+    "vllm": "0.29.0"
+  },
+  "phase": "recipient",
+  "schedule_sha256": "38b3875f02087be9ffc74571c7699509c3185d3d091cc9f89c2a0d6e37b1e922"
+}

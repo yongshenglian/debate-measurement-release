@@ -1,0 +1,43 @@
+problems 1500; invalid first answers: gemma 0, qwen 0; disagreement set D 640, complete in judge output 640
+invalid judge answers by framing: {}
+D cells: {'q_right': 120, 'g_right': 303, 'both_wrong': 217}
+
+accuracy on D:     owner 45.2  neutral 48.7  yours 43.3  another 49.2  yoursol 43.9  nswap 49.8  misattr 49.5  owner_swap 46.7
+final = own (g0):  owner 61.8  neutral 71.7  yours 54.2  another 74.6  yoursol 57.6  nswap 86.5  misattr 89.8  owner_swap 69.5
+final = other (q0):owner 33.1  neutral 22.7  yours 39.8  another 20.6  yoursol 36.4  nswap 9.0  misattr 5.9  owner_swap 24.3
+
+######## primary (per-problem means over 3 replicates; sign-flip p; bootstrap CI)
+K1 accuracy, neutral - owner: +3.5 [+1.2, +5.8]  sign-flip p=0.0030  | McNemar per replicate (a-only, b-only, p): [(63, 39, 0.022297661824692932), (68, 40, 0.009057983337532568), (63, 48, 0.1836571719017748)]
+K2 keeps own, yours - neutral: -17.5 [-20.5, -14.5]  sign-flip p=0.0000  | McNemar per replicate (a-only, b-only, p): [(42, 158, 5.1038205427106886e-17), (40, 148, 8.969911778269387e-16), (43, 155, 4.687595473940728e-16)]
+K3 takes other, another - neutral: -2.1 [-4.3, -0.1]  sign-flip p=0.0581  | McNemar per replicate (a-only, b-only, p): [(46, 72, 0.020970029530034958), (46, 50, 0.7596492883236297), (52, 63, 0.3511253697554317)]
+K4 keeps own, yoursol - yours: +3.4 [+0.7, +6.1]  sign-flip p=0.0168  | McNemar per replicate (a-only, b-only, p): [(92, 71, 0.1169544024635373), (83, 76, 0.6343339062839161), (100, 63, 0.004655769521455337)]
+K5 takes other, misattr - nswap: -3.0 [-4.5, -1.6]  sign-flip p=0.0000  | McNemar per replicate (a-only, b-only, p): [(14, 37, 0.0017691971837869858), (19, 34, 0.053438810537711046), (18, 38, 0.010454818321892184)]
+PRIMARY K2 keeps own, yours - neutral: -17.5 [-20.5, -14.5]  p=0.0000  Holm=0.0000
+PRIMARY K5 takes other, misattr - nswap: -3.0 [-4.5, -1.6]  p=0.0000  Holm=0.0002
+PRIMARY K1 accuracy, neutral - owner: +3.5 [+1.2, +5.8]  p=0.0030  Holm=0.0091
+PRIMARY K4 keeps own, yoursol - yours: +3.4 [+0.7, +6.1]  p=0.0168  Holm=0.0336
+PRIMARY K3 takes other, another - neutral: -2.1 [-4.3, -0.1]  p=0.0581  Holm=0.0581
+
+######## secondary
+position, neutral: keeps own when own first - own second: -14.7 [-17.4, -12.0]  sign-flip p=0.0000
+position, owner labels: own first - own second: -7.8 [-10.8, -4.7]  sign-flip p=0.0000
+accuracy, (neutral + nswap)/2 - owner: +4.0 [+1.7, +6.5]  sign-flip p=0.0010
+[owner] abandons own right 28.3% (n=303) | accepts other's right 51.9% (n=120) | recovers when both wrong 4.5% (n=217)
+[neutral] abandons own right 17.2% (n=303) | accepts other's right 42.5% (n=120) | recovers when both wrong 4.5% (n=217)
+[yours] abandons own right 34.3% (n=303) | accepts other's right 58.1% (n=120) | recovers when both wrong 4.0% (n=217)
+[another] abandons own right 14.6% (n=303) | accepts other's right 38.6% (n=120) | recovers when both wrong 4.5% (n=217)
+[yoursol] abandons own right 32.1% (n=303) | accepts other's right 53.1% (n=120) | recovers when both wrong 5.2% (n=217)
+[nswap] abandons own right 4.7% (n=303) | accepts other's right 18.9% (n=120) | recovers when both wrong 3.4% (n=217)
+[misattr] abandons own right 3.5% (n=303) | accepts other's right 15.0% (n=120) | recovers when both wrong 3.1% (n=217)
+[owner_swap] abandons own right 20.2% (n=303) | accepts other's right 38.9% (n=120) | recovers when both wrong 4.9% (n=217)
+
+systems over all 1500 problems (incomplete-D problems use Gemma s0):
+   gemma_s0: 65.1
+   vote3_mixed (g0,g1,q0): 66.3
+   vote3_gemma (g0,g1,g2): 67.1
+   oracle g0 or q0: 73.1
+   judge [neutral] on D, Gemma s0 elsewhere: 65.6 | - gemma_s0 +0.6 [-0.7, +1.8] | - vote3_mixed (g0,g1,q0) -0.6 [-1.9, +0.6] | - vote3_gemma (g0,g1,g2) -1.4 [-2.8, -0.0]
+   judge [owner] on D, Gemma s0 elsewhere: 64.2 | - gemma_s0 -0.9 [-2.4, +0.6] | - vote3_mixed (g0,g1,q0) -2.1 [-3.6, -0.7] | - vote3_gemma (g0,g1,g2) -2.9 [-4.5, -1.3]
+
+tokens (prompt + output, both turns), total: gemma solve 8,003,098, qwen solve 2,516,080
+judge tokens by framing: owner 7,984,600, neutral 7,933,495, yours 8,020,118, another 7,920,249, yoursol 7,916,441, nswap 7,691,202, misattr 7,776,187, owner_swap 8,003,980

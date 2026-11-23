@@ -1,0 +1,48 @@
+{
+  "code_sha256": {
+    "kv_io.py": "9f18c07afb2fd7726c5d45f2f8da737f976001510a530b42383aa2097c402938",
+    "kv_runtime.py": "6eaf7f03daea0c27c4e7ef1f070d199a25423bf72973ee48f65763f4675e7414",
+    "kv_task.py": "7b16b8e30304040afc6e537a7df700a51b0d1f0784ec0592ef829f2c68855562",
+    "pc_contract.py": "95c29bea6aa18ea1f71d426e350c322846b25dadfa4a47f83024d25a96c7df39",
+    "pc_design.py": "93ed1f68ccd249d6aad325169e96b396791025edc890fb65d12bf8a15f6dc0b3",
+    "pc_freeze.py": "3236d3a412a48a4e4d388b5932cc9a0eedd9c21a2c85d3d0015c09a30a4b9812",
+    "pc_runtime.py": "44e9657aaaff92321fcfe158cfd42ac3b5aa58c6d4a52f4ccb748b3c0e78b2f3",
+    "pc_task.py": "4a5728665510657a8e02b6f061cf0bca874c95a7670a72562f4110579cd57257",
+    "pd_contract.py": "85f53ad2b8955402f33c42855f88724a0ae4bdf6a05b40d592d00718376376e9",
+    "pd_design.py": "5eee4a42efd1d7b4fa96625434b8b85b16e7cff86ae9291e10dc9ce8c46394e4",
+    "pd_runtime.py": "9d3b8f0c1c30573b3941a76e6539ac13d69e234ca5639f3eb2bbbcbca728402d",
+    "pd_stimuli.py": "4567d1aed4df80c3c32ee9c33a53424f627d44e82b49f06a09f2b776edec3e5d",
+    "pe_audit.py": "15d8117b6a2cc61adfe3fbfaa6d07c0ca575add967baa89c18d42104b4d1dd24",
+    "pe_design.py": "4ea6541ad30d9828c83ba383f91931e53bb97305aa3618629a201d6563f12750",
+    "pe_freeze.py": "8420aeadf84a2938336971745d2e3437e1369ad775a1dad8ffe075dfb2af78f0",
+    "pe_task.py": "909ff404a5e94418c10af57d78130ee391ae0ed4bbe68ba328bd1689c7b637bd",
+    "pp_contract.py": "09a70d24786dbba166c4efaf9d5e0790daf53752d2c07b6b4c195491a270f6a0",
+    "pp_design.py": "a66298884155933410bd2eaf9d9764f973439b01d4c235b64857b2f3ab636fe1",
+    "pw_audit.py": "c5309d56350e5bff5b2f23e78acd3886b41a9dc86add445edff61a9c0fcaf0cb",
+    "pw_contract.py": "5e34753f1e70808b9a2e953e1a20b67a0d52c0d210cce4b88cc9e9c2e2f498c5",
+    "pw_design.py": "2ad33ebca39c774195261fb4627e2587c2cd838c940964351afd9c5da6ccd17f",
+    "pw_schedule.py": "c3b88ec5cbcdbfb24d9bc2ff79b2363dbbd3c06060bb27dec626ddd1cf9fcfeb",
+    "pw_worker.py": "e21772aab226e8dce6994e30eb8075025113ecb37a346dbd4545927626f28a1b",
+    "sr_audit.py": "ddad8fe8160cf3c7f27f31ea9ad7a1b89f24ea64f4deefbd951c4f47fdf1c148",
+    "sr_contract.py": "1f9cf1a7b1f327219c14857250b336e8547452b434a8f68bcdc9a49d8b7527fd",
+    "sr_design.py": "d40e1fb5d9390ba5e7741b8cb5a62c09f5169612453da73f7e753efa6991962f",
+    "sr_schedule.py": "a179218e0ceda6ec9d1a67bd99536e0e047423f6445f4f7a7959a81d671dd8de",
+    "sr_worker.py": "99a91bc6795837d24a8806685cc4755a3f9eb5754f4f9fa794353ad017bea70f"
+  },
+  "hidden_sha256": {
+    "hidden.json": "1857b608b37bb3397e6d2fe05dc61486a4b4c5b73699d803493287ef897066e6",
+    "study3-per-task.json": "8850f9ea019d867496fb73b8d597e5f91acdd770c5533848773ecbe2af3a98bd"
+  },
+  "image": "vllm/vllm-openai@sha256:082ca6f035279109041ffd3fe0695cb568b29bc580b35c4f297a66a08b216c1b",
+  "max_allocated_gpu_hours": 8.0,
+  "prepared": "2026-11-19T14:48:49.549729-05:00",
+  "protocol_sha256": "721f52941fd3f61c745f4714a24ed987ae2b8b527f1e86296f81691d477db12e",
+  "source_audit_sha256": "0190385a34cedd83c298885ab9b0f0a648e7ae5d3d2b993de795be8db0f91eea",
+  "source_run": "peer-warning-20261119-b",
+  "source_sha256": {
+    "public.json": "b34a60d1aed6ab18acf89f576e1a8c84e6130f799f8607936993c656d29a52a8",
+    "recipient-schedule.json": "153a1aa14f5dfff902017665a41e96c0be0ef74b93c8f79f516f028551d5cf4a",
+    "tasks.json": "4b1c7610d8f4c9dc238a811500a273d8da5848f4c332c9dd9dea8c98de87711b"
+  },
+  "version": "self-review-v1"
+}

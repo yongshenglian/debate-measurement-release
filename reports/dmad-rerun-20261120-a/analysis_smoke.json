@@ -1,0 +1,166 @@
+{
+ "l_agentseed": {
+  "n": 2,
+  "dmad": {
+   "by_round": [
+    {
+     "round": 0,
+     "vote": 0.5,
+     "individual": 0.4
+    },
+    {
+     "round": 1,
+     "vote": 0.5,
+     "individual": 0.5
+    },
+    {
+     "round": 2,
+     "vote": 0.5,
+     "individual": 0.4
+    },
+    {
+     "round": 3,
+     "vote": 1.0,
+     "individual": 0.6
+    },
+    {
+     "round": 4,
+     "vote": 0.5,
+     "individual": 0.6
+    }
+   ],
+   "P1_last_minus_r0": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "val": {
+   "by_round": [
+    {
+     "round": 0,
+     "vote": 0.5,
+     "individual": 0.4
+    },
+    {
+     "round": 1,
+     "vote": 0.5,
+     "individual": 0.5
+    },
+    {
+     "round": 2,
+     "vote": 0.5,
+     "individual": 0.4
+    },
+    {
+     "round": 3,
+     "vote": 1.0,
+     "individual": 0.6
+    },
+    {
+     "round": 4,
+     "vote": 0.5,
+     "individual": 0.6
+    }
+   ],
+   "P1_last_minus_r0": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "parse_error_rate": [
+   0.3,
+   0.0,
+   0.4,
+   0.4,
+   0.0
+  ],
+  "r0_identical_texts_pct": 0.0,
+  "r0_mean_distinct_texts": 5.0,
+  "r0_mean_unique_answers_dmad": 2.0,
+  "r0_mean_unique_answers_val": 2.0
+ },
+ "q_faithful": {
+  "n": 2,
+  "dmad": {
+   "by_round": [
+    {
+     "round": 0,
+     "vote": 0.5,
+     "individual": 0.5
+    },
+    {
+     "round": 1,
+     "vote": 0.5,
+     "individual": 0.5
+    },
+    {
+     "round": 2,
+     "vote": 0.5,
+     "individual": 0.5
+    },
+    {
+     "round": 3,
+     "vote": 0.5,
+     "individual": 0.5
+    },
+    {
+     "round": 4,
+     "vote": 0.5,
+     "individual": 0.5
+    }
+   ],
+   "P1_last_minus_r0": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "val": {
+   "by_round": [
+    {
+     "round": 0,
+     "vote": 0.5,
+     "individual": 0.5
+    },
+    {
+     "round": 1,
+     "vote": 0.5,
+     "individual": 0.5
+    },
+    {
+     "round": 2,
+     "vote": 0.5,
+     "individual": 0.5
+    },
+    {
+     "round": 3,
+     "vote": 0.5,
+     "individual": 0.5
+    },
+    {
+     "round": 4,
+     "vote": 0.5,
+     "individual": 0.5
+    }
+   ],
+   "P1_last_minus_r0": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "parse_error_rate": [
+   0.0,
+   0.5,
+   0.4,
+   0.3,
+   0.2
+  ],
+  "r0_identical_texts_pct": 50.0,
+  "r0_mean_distinct_texts": 1.5,
+  "r0_mean_unique_answers_dmad": 1.0,
+  "r0_mean_unique_answers_val": 1.0
+ }
+}

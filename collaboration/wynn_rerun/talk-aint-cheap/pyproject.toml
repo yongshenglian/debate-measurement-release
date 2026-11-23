@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "normative_module_v2"
+version = "0.1.0"
+description = "Normative Module v2 for LLM debate experiments"
+readme = "README.md"
+authors = [
+    {name = "harsh", email = "harsh.satija@vectorinstitute.ai"}
+]
+requires-python = ">=3.8"
+# This tells setuptools to use the requirements.txt file for dependencies
+dynamic = ["dependencies"]
+
+[tool.setuptools]
+packages = ["src"]
+
+[tool.setuptools.dynamic]
+# Reference your existing requirements file
+dependencies = {file = ["requirements.txt"]} 

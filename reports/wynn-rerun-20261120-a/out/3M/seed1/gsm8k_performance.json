@@ -1,0 +1,26 @@
+[
+    {
+        "round_1": {
+            "mistral-7b_agent_1": 0.37,
+            "mistral-7b_agent_2": 0.28,
+            "mistral-7b_agent_0": 0.37,
+            "majority_vote": 0.45
+        }
+    },
+    {
+        "round_2": {
+            "mistral-7b_agent_1": 0.41,
+            "mistral-7b_agent_2": 0.36,
+            "mistral-7b_agent_0": 0.38,
+            "majority_vote": 0.46
+        }
+    },
+    {
+        "round_3": {
+            "mistral-7b_agent_1": 0.33,
+            "mistral-7b_agent_2": 0.4,
+            "mistral-7b_agent_0": 0.35,
+            "majority_vote": 0.45
+        }
+    }
+]

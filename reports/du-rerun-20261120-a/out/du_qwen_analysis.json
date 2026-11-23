@@ -1,0 +1,96 @@
+{
+ "all300": {
+  "by_round": [
+   {
+    "round": 0,
+    "vote_du": 0.88,
+    "vote_val": 0.8794444444444444,
+    "ind_du": 0.8677777777777778,
+    "ind_val": 0.8677777777777778,
+    "fallback_pct": 0.0,
+    "misread_pct": 0.0,
+    "val_none_pct": 0.1111111111111111,
+    "none_scored_correct": 0
+   },
+   {
+    "round": 1,
+    "vote_du": 0.89,
+    "vote_val": 0.8911111111111111,
+    "ind_du": 0.8888888888888888,
+    "ind_val": 0.8888888888888888,
+    "fallback_pct": 0.0,
+    "misread_pct": 0.0,
+    "val_none_pct": 0.1111111111111111,
+    "none_scored_correct": 0
+   },
+   {
+    "round": 2,
+    "vote_du": 0.8866666666666667,
+    "vote_val": 0.89,
+    "ind_du": 0.8911111111111111,
+    "ind_val": 0.8911111111111111,
+    "fallback_pct": 0.0,
+    "misread_pct": 0.0,
+    "val_none_pct": 0.2222222222222222,
+    "none_scored_correct": 0
+   }
+  ],
+  "P_du_r2_minus_r0": [
+   0.6666666666666666,
+   -1.3333333333333335,
+   2.666666666666667
+  ],
+  "P_val_r2_minus_r0": [
+   1.0555555555555556,
+   -0.7777777777777777,
+   3.055555555555556
+  ]
+ },
+ "first100": {
+  "by_round": [
+   {
+    "round": 0,
+    "vote_du": 0.86,
+    "vote_val": 0.8566666666666667,
+    "ind_du": 0.8533333333333334,
+    "ind_val": 0.8533333333333334,
+    "fallback_pct": 0.0,
+    "misread_pct": 0.0,
+    "val_none_pct": 0.0,
+    "none_scored_correct": 0
+   },
+   {
+    "round": 1,
+    "vote_du": 0.85,
+    "vote_val": 0.8533333333333333,
+    "ind_du": 0.8566666666666667,
+    "ind_val": 0.8566666666666667,
+    "fallback_pct": 0.0,
+    "misread_pct": 0.0,
+    "val_none_pct": 0.0,
+    "none_scored_correct": 0
+   },
+   {
+    "round": 2,
+    "vote_du": 0.86,
+    "vote_val": 0.86,
+    "ind_du": 0.86,
+    "ind_val": 0.86,
+    "fallback_pct": 0.0,
+    "misread_pct": 0.0,
+    "val_none_pct": 0.0,
+    "none_scored_correct": 0
+   }
+  ],
+  "P_du_r2_minus_r0": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "P_val_r2_minus_r0": [
+   0.3333333333333334,
+   -1.0,
+   2.0
+  ]
+ }
+}

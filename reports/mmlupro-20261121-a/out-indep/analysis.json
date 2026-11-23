@@ -1,0 +1,196 @@
+{
+ "qwen": {
+  "n": 600,
+  "invalid": {
+   "solve_s0": 0,
+   "solve_s1": 0,
+   "review": {
+    "self": 0,
+    "peer_qwen": 0,
+    "peer_gemma": 0
+   }
+  },
+  "first": 0.545,
+  "acc": {
+   "self": 0.5483333333333333,
+   "peer_qwen": 0.5533333333333333,
+   "peer_gemma": 0.6433333333333333
+  },
+  "peer_qwen-self": [
+   0.005,
+   -0.023333333333333334,
+   0.03333333333333333
+  ],
+  "peer_gemma-self": [
+   0.095,
+   0.06333333333333334,
+   0.12833333333333333
+  ],
+  "self-first": [
+   0.0033333333333333335,
+   -0.01,
+   0.016666666666666666
+  ],
+  "mechanism": {
+   "self": {
+    "corruption": [
+     8,
+     327
+    ],
+    "rescue": [
+     10,
+     273
+    ]
+   },
+   "peer_qwen": {
+    "corruption": [
+     32,
+     327
+    ],
+    "rescue": [
+     37,
+     273
+    ],
+    "corruption|peer wrong": [
+     30,
+     51
+    ],
+    "followed wrong peer|own right": [
+     29,
+     51
+    ],
+    "corruption|peer right": [
+     2,
+     276
+    ],
+    "rescue|peer right": [
+     28,
+     46
+    ]
+   },
+   "peer_gemma": {
+    "corruption": [
+     20,
+     327
+    ],
+    "rescue": [
+     79,
+     273
+    ],
+    "corruption|peer wrong": [
+     20,
+     46
+    ],
+    "followed wrong peer|own right": [
+     20,
+     46
+    ],
+    "corruption|peer right": [
+     0,
+     281
+    ],
+    "rescue|peer right": [
+     76,
+     117
+    ]
+   }
+  }
+ },
+ "gemma": {
+  "n": 600,
+  "invalid": {
+   "solve_s0": 0,
+   "solve_s1": 0,
+   "review": {
+    "self": 0,
+    "peer_qwen": 0,
+    "peer_gemma": 0
+   }
+  },
+  "first": 0.6633333333333333,
+  "acc": {
+   "self": 0.6533333333333333,
+   "peer_qwen": 0.66,
+   "peer_gemma": 0.6566666666666666
+  },
+  "peer_qwen-self": [
+   0.006666666666666667,
+   -0.021666666666666667,
+   0.03333333333333333
+  ],
+  "peer_gemma-self": [
+   0.0033333333333333335,
+   -0.02666666666666667,
+   0.03333333333333333
+  ],
+  "self-first": [
+   -0.01,
+   -0.03333333333333333,
+   0.013333333333333334
+  ],
+  "mechanism": {
+   "self": {
+    "corruption": [
+     28,
+     398
+    ],
+    "rescue": [
+     22,
+     202
+    ]
+   },
+   "peer_qwen": {
+    "corruption": [
+     24,
+     398
+    ],
+    "rescue": [
+     22,
+     202
+    ],
+    "corruption|peer wrong": [
+     23,
+     117
+    ],
+    "followed wrong peer|own right": [
+     17,
+     117
+    ],
+    "corruption|peer right": [
+     1,
+     281
+    ],
+    "rescue|peer right": [
+     18,
+     46
+    ]
+   },
+   "peer_gemma": {
+    "corruption": [
+     33,
+     398
+    ],
+    "rescue": [
+     29,
+     202
+    ],
+    "corruption|peer wrong": [
+     30,
+     46
+    ],
+    "followed wrong peer|own right": [
+     28,
+     46
+    ],
+    "corruption|peer right": [
+     3,
+     352
+    ],
+    "rescue|peer right": [
+     26,
+     38
+    ]
+   }
+  }
+ }
+}

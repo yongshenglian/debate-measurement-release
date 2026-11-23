@@ -1,0 +1,14 @@
+{
+ "tasks": 600,
+ "with_base": 521,
+ "base_sources": {
+  "gemma_s1": 481,
+  "qwen_s1": 15,
+  "gemma_s0": 25
+ },
+ "no_valid_C": 25,
+ "no_valid_E": 183,
+ "stimuli": 313,
+ "qwen_jobs": 4056,
+ "gemma_jobs": 2072
+}

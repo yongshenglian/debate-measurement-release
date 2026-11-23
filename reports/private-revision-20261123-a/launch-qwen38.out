@@ -1,0 +1,6 @@
+start qwen38 2026-11-23T04:35:03Z model /mnt/sdb/lian_models/hub/models--cyankiwi--Qwen3.8-27B-AWQ-INT4 ctk {"enable_thinking": false}
+self-1 exit 0 2026-11-23T05:04:08Z
+self-3 exit 0 2026-11-23T05:05:36Z
+self-2 exit 0 2026-11-23T05:08:15Z
+self-0 exit 0 2026-11-23T05:09:37Z
+ALL DONE 2026-11-23T05:09:37Z

@@ -1,0 +1,37 @@
+{
+  "arms": {
+    "central": {
+      "history_rows": 300,
+      "labels_match_expected_prefix": true,
+      "log_minus_history_rows": 0,
+      "logged_questions": 300,
+      "questions_match_expected_prefix": true
+    },
+    "dense": {
+      "history_rows": 300,
+      "labels_match_expected_prefix": true,
+      "log_minus_history_rows": 0,
+      "logged_questions": 300,
+      "questions_match_expected_prefix": true
+    },
+    "single": {
+      "history_rows": 300,
+      "labels_match_expected_prefix": true,
+      "log_minus_history_rows": 0,
+      "logged_questions": 300,
+      "questions_match_expected_prefix": true
+    },
+    "sparse": {
+      "history_rows": 300,
+      "labels_match_expected_prefix": true,
+      "log_minus_history_rows": 0,
+      "logged_questions": 300,
+      "questions_match_expected_prefix": true
+    }
+  },
+  "dataset_rows": 1319,
+  "expected_size": 300,
+  "mode": "complete",
+  "ordered_manifest_sha256": "2f0dc48003c4268db1bba1917eaf212d30fe6d23d57ad3aeb75508f7c9a05202",
+  "passed": true
+}

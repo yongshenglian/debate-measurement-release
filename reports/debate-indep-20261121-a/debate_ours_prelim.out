@@ -1,0 +1,13 @@
+== H_full: vote 67.9 66.7 66.1 65.8 | individual 56.5 63.7 64.6 64.3 | final unanimous 81.0%
+   P1 -2.1 [-5.2, +0.9] | G4 -1.4 [-4.4, +1.5] | final - vote20 -7.9 [-11.9, -4.2] | pool of 20 - vote20 -6.4 [-10.3, -2.8] | contested n=151 +9.9/-14.2
+== H_ans: vote 69.0 70.1 69.6 69.2 | individual 55.3 60.8 61.5 61.5 | final unanimous 45.3%
+   P1 +0.1 [-2.7, +2.8] | G4 +0.4 [-2.2, +3.1] | final - vote20 -4.6 [-8.2, -1.2] | pool of 20 - vote20 -2.8 [-6.4, +0.7] | contested n=155 +10.9/-9.6
+== H_full_indep: vote 68.4 67.0 68.5 66.7 | individual 55.7 63.1 65.3 65.7 | final unanimous 75.7%
+   P1 -1.7 [-5.1, +1.6] | G4 -1.2 [-4.4, +1.9] | final - vote20 -7.0 [-11.0, -3.2] | pool of 20 - vote20 -4.4 [-7.9, -1.1] | contested n=154 +11.9/-15.5
+== H_ans_indep: vote 68.4 69.5 69.5 69.3 | individual 55.7 62.1 63.7 64.2 | final unanimous 49.0%
+   P1 +0.8 [-2.2, +3.9] | G4 +0.5 [-2.5, +3.5] | final - vote20 -4.5 [-8.0, -1.1] | pool of 20 - vote20 -3.3 [-6.7, +0.1] | contested n=154 +13.9/-12.4
+
+vote20 73.8
+PRIMARY IS1  H_ans_indep final - vote20: -4.5 [-8.0, -1.1]
+IS2  P1(H_full_indep) - P1(H_full): +0.4 [-3.8, +4.7]  p=0.8538  Holm=1.0000
+IS2  P1(H_ans_indep) - P1(H_ans): +0.7 [-3.2, +4.7]  p=0.7201  Holm=1.0000

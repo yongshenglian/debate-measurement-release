@@ -1,0 +1,26 @@
+
+######## Two-model systems over ALL problems (common denominator; an invalid answer counts as wrong)
+== gsm8k (N = 1319; invalid first answers: gemma 0, qwen 0)
+   Gemma s0                     95.3   - Gemma s0 +0.0 [+0.0, +0.0]
+   Gemma reads Qwen (owner)     95.2   - Gemma s0 -0.1 [-1.1, +0.9]
+   Qwen reads Gemma (owner)     93.8   - Gemma s0 -1.5 [-2.6, -0.5]
+   vote3 (g0, g1, q0)           96.1   - Gemma s0 +0.8 [+0.3, +1.3]
+   Gemma judge, neutral, on D   95.8   - Gemma s0 +0.5 [-0.3, +1.2]
+   Gemma judge, owner, on D     95.6   - Gemma s0 +0.3 [-0.6, +1.2]
+   oracle (g0 or q0)            96.9   - Gemma s0 +1.6 [+1.0, +2.3]
+== math (N = 600; invalid first answers: gemma 0, qwen 1)
+   Gemma s0                     84.2   - Gemma s0 +0.0 [+0.0, +0.0]
+   Gemma reads Qwen (owner)     82.7   - Gemma s0 -1.5 [-3.5, +0.3]
+   Qwen reads Gemma (owner)     76.5   - Gemma s0 -7.7 [-10.3, -5.0]
+   vote3 (g0, g1, q0)           84.7   - Gemma s0 +0.5 [-0.7, +1.7]
+   Gemma judge, neutral, on D   85.2   - Gemma s0 +1.0 [-0.5, +2.7]
+   Gemma judge, owner, on D     84.2   - Gemma s0 +0.0 [-1.8, +1.8]
+   oracle (g0 or q0)            87.0   - Gemma s0 +2.8 [+1.5, +4.2]
+== mmlu (N = 600; invalid first answers: gemma 0, qwen 0)
+   Gemma s0                     66.3   - Gemma s0 +0.0 [+0.0, +0.0]
+   Gemma reads Qwen (owner)     64.0   - Gemma s0 -2.3 [-4.7, +0.2]
+   Qwen reads Gemma (owner)     65.5   - Gemma s0 -0.8 [-3.3, +1.7]
+   vote3 (g0, g1, q0)           67.5   - Gemma s0 +1.2 [-0.7, +3.0]
+   Gemma judge, neutral, on D   66.5   - Gemma s0 +0.2 [-2.0, +2.3]
+   Gemma judge, owner, on D     63.7   - Gemma s0 -2.7 [-5.0, -0.3]
+   oracle (g0 or q0)            74.0   - Gemma s0 +7.7 [+5.7, +9.8]

@@ -1,0 +1,33 @@
+n problems = 197; 5 agents x 6 rounds; bootstrap 4000 draws, seed 20261117, 95% CI
+published       r0 individual 0.732 empty  85 vote 0.868
+published       r1 individual 0.775 empty  62 vote 0.850  vote-r0 -0.018 [-0.043, +0.007]
+published       r2 individual 0.781 empty  57 vote 0.855  vote-r0 -0.012 [-0.045, +0.019]
+published       r3 individual 0.785 empty  51 vote 0.840  vote-r0 -0.028 [-0.063, +0.006]
+published       r4 individual 0.782 empty  44 vote 0.840  vote-r0 -0.028 [-0.069, +0.013]
+published       r5 individual 0.770 empty  58 vote 0.820  vote-r0 -0.048 [-0.089, -0.009]
+published+echo  r0 individual 0.737 empty  85 vote 0.868
+published+echo  r1 individual 0.782 empty  62 vote 0.850  vote-r0 -0.018 [-0.043, +0.007]
+published+echo  r2 individual 0.793 empty  59 vote 0.858  vote-r0 -0.010 [-0.042, +0.022]
+published+echo  r3 individual 0.796 empty  52 vote 0.848  vote-r0 -0.020 [-0.055, +0.012]
+published+echo  r4 individual 0.798 empty  50 vote 0.845  vote-r0 -0.023 [-0.062, +0.016]
+published+echo  r5 individual 0.785 empty  63 vote 0.835  vote-r0 -0.033 [-0.070, +0.004]
+robust(Qwen)    r0 individual 0.742 empty  62 vote 0.871
+robust(Qwen)    r1 individual 0.775 empty  50 vote 0.853  vote-r0 -0.018 [-0.044, +0.006]
+robust(Qwen)    r2 individual 0.770 empty  48 vote 0.843  vote-r0 -0.029 [-0.065, +0.006]
+robust(Qwen)    r3 individual 0.757 empty  44 vote 0.822  vote-r0 -0.049 [-0.087, -0.013]
+robust(Qwen)    r4 individual 0.766 empty  35 vote 0.816  vote-r0 -0.055 [-0.096, -0.015]
+robust(Qwen)    r5 individual 0.756 empty  48 vote 0.812  vote-r0 -0.059 [-0.102, -0.018]
+robust+echo     r0 individual 0.748 empty  64 vote 0.871
+robust+echo     r1 individual 0.788 empty  51 vote 0.858  vote-r0 -0.013 [-0.037, +0.010]
+robust+echo     r2 individual 0.795 empty  50 vote 0.853  vote-r0 -0.018 [-0.053, +0.015]
+robust+echo     r3 individual 0.788 empty  45 vote 0.842  vote-r0 -0.029 [-0.065, +0.004]
+robust+echo     r4 individual 0.799 empty  42 vote 0.849  vote-r0 -0.022 [-0.060, +0.015]
+robust+echo     r5 individual 0.788 empty  53 vote 0.845  vote-r0 -0.026 [-0.063, +0.009]
+
+pattern % of agent outputs by round
+r0 escaped_delims 0.0 loop_5plus 5.6 two_distinct_answers 5.0 no_answer_marker 7.0 braces_after_answer 1.5 quoted_example 1.6 placeholder_as_answer 0.5
+r1 escaped_delims 0.0 loop_5plus 13.5 two_distinct_answers 6.3 no_answer_marker 3.6 braces_after_answer 2.9 quoted_example 3.5 placeholder_as_answer 1.3
+r2 escaped_delims 0.0 loop_5plus 23.7 two_distinct_answers 8.5 no_answer_marker 3.2 braces_after_answer 3.2 quoted_example 4.6 placeholder_as_answer 1.7
+r3 escaped_delims 0.0 loop_5plus 28.9 two_distinct_answers 8.3 no_answer_marker 2.9 braces_after_answer 3.8 quoted_example 5.0 placeholder_as_answer 2.6
+r4 escaped_delims 0.0 loop_5plus 33.9 two_distinct_answers 8.2 no_answer_marker 2.3 braces_after_answer 3.5 quoted_example 6.5 placeholder_as_answer 2.2
+r5 escaped_delims 0.0 loop_5plus 35.5 two_distinct_answers 8.0 no_answer_marker 2.2 braces_after_answer 4.1 quoted_example 6.9 placeholder_as_answer 1.6

@@ -1,0 +1,10 @@
+start qwen38 2026-11-22T20:21:41Z image vllm/vllm-openai@sha256:082ca6f035279109041ffd3fe0695cb568b29bc580b35c4f297a66a08b216c1b model /mnt/sdb/lian_models/hub/models--cyankiwi--Qwen3.8-27B-AWQ-INT4@63768c10df38c0395e12ef49edac1bd539eaeeea ctk {"enable_thinking": false}
+solve-s0 exit 0 2026-11-22T21:28:45Z
+solve-s2 exit 0 2026-11-22T21:29:02Z
+solve-s1 exit 0 2026-11-22T21:29:05Z
+solves done 2026-11-22T21:29:05Z
+judge-1 exit 124 2026-11-23T03:01:58Z
+judge-3 exit 124 2026-11-23T03:09:58Z
+judge-2 exit 124 2026-11-23T03:37:59Z
+judge-0 exit 124 2026-11-23T03:51:59Z
+ALL DONE 2026-11-23T03:51:59Z

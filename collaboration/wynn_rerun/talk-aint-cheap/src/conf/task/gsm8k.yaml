@@ -1,0 +1,18 @@
+defaults:
+  - base
+
+name: gsm8k
+data_path: "./data/GSM8k/gsm8k_test.jsonl"
+
+metrics:
+  - "accuracy"
+
+# Task specific prompts
+partials:
+  discussion_message: |
+    These are the solutions to the problem from other agents: 
+    {AGENT_RESPONSES}
+
+    Using the solutions from other agents as additional information, can you provide your answer to the math problem? 
+    Explain your reasoning.
+    The original math problem is {QUESTION_PROMPT}. Your final answer should be a single numerical number, in the form \\boxed{{answer}}, at the end of your response.

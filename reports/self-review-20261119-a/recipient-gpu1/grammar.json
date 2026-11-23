@@ -1,0 +1,35 @@
+{
+  "adapter": "llguidance.hf",
+  "checks": [
+    {
+      "accepted": true,
+      "expected": true
+    },
+    {
+      "accepted": true,
+      "expected": true
+    },
+    {
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "accepted": false,
+      "expected": false
+    }
+  ],
+  "family": "qwen",
+  "passed": true
+}

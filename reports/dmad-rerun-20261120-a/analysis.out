@@ -1,0 +1,32 @@
+== llama-a_faithful n=300  r0 identical texts 87.0%  distinct texts 1.14  unique answers dmad 0.71 val 0.71
+   parse errors by round [31.9, 13.4, 7.8, 6.2, 5.1]
+   dmad vote 0.550 0.647 0.597 0.540 0.547  ind 0.537 0.526 0.537 0.521 0.530  last-r0 -0.3 [-7.0, +6.7]
+   val  vote 0.567 0.687 0.626 0.568 0.576  ind 0.550 0.549 0.555 0.537 0.547  last-r0 +0.9 [-6.0, +7.9]
+== llama-a_nostop n=300  r0 identical texts 86.7%  distinct texts 1.14  unique answers dmad 0.71 val 0.71
+   parse errors by round [32.1, 13.6, 7.3, 4.4, 4.7]
+   dmad vote 0.553 0.647 0.627 0.590 0.583  ind 0.538 0.533 0.558 0.571 0.573  last-r0 +3.0 [-4.0, +10.0]
+   val  vote 0.570 0.692 0.651 0.627 0.626  ind 0.553 0.557 0.576 0.587 0.592  last-r0 +5.6 [-1.3, +12.5]
+== llama-b_agentseed n=300  r0 identical texts 0.0%  distinct texts 5.00  unique answers dmad 1.44 val 1.42
+   parse errors by round [33.1, 7.5, 4.5, 3.5, 3.5]
+   dmad vote 0.803 0.803 0.767 0.760 0.780  ind 0.525 0.705 0.721 0.736 0.747  last-r0 -2.3 [-6.7, +2.0]
+   val  vote 0.831 0.817 0.797 0.788 0.805  ind 0.540 0.728 0.751 0.766 0.776  last-r0 -2.6 [-6.8, +1.8]
+== llama-f_fixed n=300  r0 identical texts 0.0%  distinct texts 5.00  unique answers dmad 1.44 val 1.42
+   parse errors by round [33.1, 7.5, 4.5, 3.5, 3.3]
+   dmad vote 0.793 0.783 0.760 0.757 0.767  ind 0.525 0.705 0.721 0.736 0.744  last-r0 -2.7 [-7.3, +2.0]
+   val  vote 0.831 0.817 0.797 0.788 0.797  ind 0.540 0.728 0.751 0.766 0.773  last-r0 -3.4 [-7.7, +0.9]
+== qwen_agentseed n=300  r0 identical texts 0.0%  distinct texts 4.98  unique answers dmad 1.28 val 1.18
+   parse errors by round [18.4, 4.9, 5.7, 5.5, 4.7]
+   dmad vote 0.857 0.877 0.863 0.863 0.860  ind 0.685 0.817 0.812 0.807 0.813  last-r0 +0.3 [-2.7, +3.3]
+   val  vote 0.927 0.932 0.920 0.920 0.913  ind 0.707 0.861 0.857 0.857 0.860  last-r0 -1.4 [-4.4, +1.5]
+== qwen_faithful n=300  r0 identical texts 52.0%  distinct texts 1.63  unique answers dmad 0.90 val 0.85
+   parse errors by round [18.0, 6.2, 6.7, 5.7, 7.5]
+   dmad vote 0.723 0.847 0.837 0.830 0.823  ind 0.696 0.783 0.771 0.787 0.757  last-r0 +10.0 [+5.3, +15.0]
+   val  vote 0.758 0.887 0.872 0.864 0.840  ind 0.714 0.808 0.795 0.805 0.772  last-r0 +8.2 [+2.8, +13.3]
+== qwen_fixed n=300  r0 identical texts 0.0%  distinct texts 5.00  unique answers dmad 1.38 val 1.25
+   parse errors by round [0.7, 0.5, 0.1, 0.0, 0.1]
+   dmad vote 0.883 0.853 0.847 0.837 0.830  ind 0.834 0.836 0.839 0.835 0.826  last-r0 -5.3 [-8.7, -2.3]
+   val  vote 0.936 0.917 0.917 0.903 0.897  ind 0.866 0.887 0.894 0.890 0.886  last-r0 -3.9 [-7.0, -1.0]
+== qwen_nostop n=300  r0 identical texts 46.3%  distinct texts 1.69  unique answers dmad 0.94 val 0.87
+   parse errors by round [17.6, 7.3, 6.3, 4.7, 5.0]
+   dmad vote 0.723 0.823 0.833 0.840 0.830  ind 0.688 0.761 0.770 0.795 0.783  last-r0 +10.7 [+6.0, +15.3]
+   val  vote 0.757 0.850 0.880 0.877 0.868  ind 0.707 0.794 0.797 0.828 0.824  last-r0 +11.2 [+6.5, +15.8]

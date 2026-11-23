@@ -1,0 +1,11 @@
+{
+  "completed_calls": 1288,
+  "expected_calls": 1288,
+  "family": "qwen",
+  "gpu": 3,
+  "invalid_generations": 0,
+  "phase": "recipient",
+  "seconds": 3524.253645074088,
+  "status": "completed",
+  "utc": "2026-11-19T20:47:52Z"
+}

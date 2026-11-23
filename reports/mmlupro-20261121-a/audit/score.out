@@ -1,0 +1,4 @@
+H_ans          agreement on recovered 91/97 = 93.8%  FAIL | ours none, Gemma reads one: 2/100
+H_ans_indep    agreement on recovered 93/94 = 98.9%  PASS | ours none, Gemma reads one: 5/100
+H_full         agreement on recovered 95/96 = 99.0%  PASS | ours none, Gemma reads one: 4/100
+H_full_indep   agreement on recovered 90/93 = 96.8%  PASS | ours none, Gemma reads one: 7/100

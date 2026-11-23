@@ -1,0 +1,29 @@
+Total number of agents: 3
+
+Processing Strategy: CONCURRENT (20 questions at a time)
+Questions processed:   0%|          | 0/100 [00:00<?, ?it/s]Questions processed:  20%|██        | 20/100 [02:18<09:14,  6.93s/it]Questions processed:  40%|████      | 40/100 [05:28<08:25,  8.43s/it]Questions processed:  60%|██████    | 60/100 [08:29<05:48,  8.71s/it]Questions processed:  80%|████████  | 80/100 [11:14<02:50,  8.54s/it]Questions processed: 100%|██████████| 100/100 [14:24<00:00,  8.88s/it]Questions processed: 100%|██████████| 100/100 [14:24<00:00,  8.65s/it]
+
+Checkpoint saved: /out/seed4/checkpoint
+Progress: 26/100 questions
+Checkpoint saved at question 26/100
+
+Checkpoint saved: /out/seed4/checkpoint
+Progress: 51/100 questions
+Checkpoint saved at question 51/100
+
+Checkpoint saved: /out/seed4/checkpoint
+Progress: 76/100 questions
+Checkpoint saved at question 76/100
+
+Checkpoint saved: /out/seed4/checkpoint
+Progress: 100/100 questions
+Checkpoint saved at question 100/100
+Saving results to /out/seed4/gsm8k_result.json
+
+Running evaluation on results...
+Round 1 majority-vote accuracy: 0.87
+Round 2 majority-vote accuracy: 0.78
+Round 3 majority-vote accuracy: 0.81
+Saving performance metrics to /out/seed4/gsm8k_performance.json
+
+Experiment completed and saved to checkpoint: /out/seed4/checkpoint

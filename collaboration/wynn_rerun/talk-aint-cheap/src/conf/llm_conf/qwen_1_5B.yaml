@@ -1,0 +1,13 @@
+language_models:
+  - model_name: "qwen-1.5b-instruct"
+    litellm_params:
+      model: "openai/Qwen2.5-1.5B-Instruct"
+      api_base: "http://gpu082:8080/v1"
+      api_key: "EMPTY"
+      timeout: 300
+      num_retries: 5
+
+completion_params:
+  top_p: 0.9
+  max_tokens: 2048
+  # etc etc.

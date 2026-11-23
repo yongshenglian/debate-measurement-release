@@ -1,0 +1,45 @@
+judge qwen38; |D| 650, complete for all framings and self 650; invalid self answers 0
+first turn ends at the token limit (%): owner 17.5, neutral 17.0, yours 17.0, another 18.1, yoursol 16.0, nswap 16.5, misattr 15.3, owner_swap 17.7, self 13.4
+accuracy on D: owner 72.9  neutral 73.6  yours 73.3  another 73.1  yoursol 73.3  nswap 73.6  misattr 73.9  owner_swap 73.2  self 73.3
+
+######## primary: accuracy on D, framing - private revision (Holm over 3)
+   neutral  - self: +0.3 [-0.9, +1.5]  p=0.6800  Holm=1.0000
+   nswap    - self: +0.3 [-0.9, +1.5]  p=0.6823  Holm=1.0000
+   misattr  - self: +0.6 [-0.7, +1.9]  p=0.4126  Holm=1.0000
+
+######## secondary: all framings - self, accuracy on D (unadjusted)
+   owner      -0.5 [-1.8, +0.9]  p=0.5474
+   neutral    +0.3 [-0.9, +1.5]  p=0.6800
+   yours      -0.1 [-1.3, +1.2]  p=1.0000
+   another    -0.3 [-1.7, +1.1]  p=0.7784
+   yoursol    -0.0 [-1.3, +1.3]  p=1.0000
+   nswap      +0.3 [-0.9, +1.5]  p=0.6823
+   misattr    +0.6 [-0.7, +1.9]  p=0.4126
+   owner_swap -0.2 [-1.4, +1.1]  p=0.8794
+
+######## correctness-cell decomposition: contributions to accuracy over all 1,500 problems (pp)
+   owner      gains peer's right answer +0.78 | loses own right answer -1.36 | new right answer, both wrong +1.02 | net +0.44
+   neutral    gains peer's right answer +0.89 | loses own right answer -1.02 | new right answer, both wrong +0.91 | net +0.78
+   yours      gains peer's right answer +0.87 | loses own right answer -0.96 | new right answer, both wrong +0.71 | net +0.62
+   another    gains peer's right answer +0.89 | loses own right answer -1.27 | new right answer, both wrong +0.91 | net +0.53
+   yoursol    gains peer's right answer +0.96 | loses own right answer -1.09 | new right answer, both wrong +0.78 | net +0.64
+   nswap      gains peer's right answer +0.84 | loses own right answer -0.96 | new right answer, both wrong +0.89 | net +0.78
+   misattr    gains peer's right answer +0.89 | loses own right answer -0.98 | new right answer, both wrong +1.00 | net +0.91
+   owner_swap gains peer's right answer +0.91 | loses own right answer -1.07 | new right answer, both wrong +0.73 | net +0.58
+   self       gains peer's right answer +0.36 | loses own right answer -0.62 | new right answer, both wrong +0.91 | net +0.64
+   cell sizes: {'peer_right': 44, 'own_right': 467, 'both_wrong': 139}
+   framing - self within each cell (pp of 1,500; bootstrap over the cell's problems):
+   owner      peer_right +0.4 [+0.2, +0.7] | own_right -0.7 [-1.2, -0.4] | both_wrong +0.1 [-0.2, +0.4]
+   neutral    peer_right +0.5 [+0.2, +0.8] | own_right -0.4 [-0.7, -0.1] | both_wrong -0.0 [-0.3, +0.3]
+   yours      peer_right +0.5 [+0.3, +0.8] | own_right -0.3 [-0.6, -0.0] | both_wrong -0.2 [-0.5, +0.1]
+   another    peer_right +0.5 [+0.2, +0.8] | own_right -0.6 [-1.1, -0.3] | both_wrong -0.0 [-0.3, +0.3]
+   yoursol    peer_right +0.6 [+0.4, +0.9] | own_right -0.5 [-0.9, -0.1] | both_wrong -0.1 [-0.4, +0.2]
+   nswap      peer_right +0.5 [+0.2, +0.8] | own_right -0.3 [-0.7, +0.0] | both_wrong -0.0 [-0.3, +0.2]
+   misattr    peer_right +0.5 [+0.2, +0.9] | own_right -0.4 [-0.7, -0.0] | both_wrong +0.1 [-0.2, +0.4]
+   owner_swap peer_right +0.6 [+0.3, +0.8] | own_right -0.4 [-0.8, -0.1] | both_wrong -0.2 [-0.5, +0.1]
+
+######## systems over all 1,500 problems (judge on D, judge s0 elsewhere)
+   judge s0 81.07; vote(j0, j1, j2) 82.13; private revision 81.71
+   private revision - judge s0: +0.6 [+0.0, +1.3]  p=0.0511
+   private revision - vote3: -0.4 [-1.5, +0.6]  p=0.4624
+   note: revising only on D uses the peer's answer to choose D, so this is a matched comparison, not a stand-alone policy; logical calls as run: 3650 for both private revision and peer review on D; vote3 4,500

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Debate Answer Audit</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1d1d1b; --muted:#6b6a66; --line:#dddbd5; --card:#fff; --accent:#2f6fde; --done:#2e8b57; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#1b1b1a; --fg:#ecebe8; --muted:#a3a19b; --line:#3a3936; --card:#252523; --accent:#7aa7ff; --done:#6cc08b; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.5 system-ui, sans-serif; }
+  header { position:sticky; top:0; background:var(--bg); border-bottom:1px solid var(--line); padding:10px 16px; display:flex; flex-wrap:wrap; gap:10px; align-items:center; z-index:1; }
+  header .grow { flex:1; }
+  main { max-width:900px; margin:0 auto; padding:16px; }
+  details { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:10px 14px; margin-bottom:16px; }
+  pre { white-space:pre-wrap; word-break:break-word; background:var(--card); border:1px solid var(--line); border-radius:8px; padding:14px; font:13px/1.55 ui-monospace, monospace; max-height:60vh; overflow:auto; }
+  .row { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin:12px 0; }
+  input[type=text] { font:inherit; padding:7px 10px; border:1px solid var(--line); border-radius:6px; background:var(--card); color:var(--fg); }
+  #answer { width:160px; } #note { flex:1; min-width:180px; }
+  button { font:inherit; padding:7px 12px; border:1px solid var(--line); border-radius:6px; background:var(--card); color:var(--fg); cursor:pointer; }
+  button.on { border-color:var(--accent); color:var(--accent); font-weight:600; }
+  .muted { color:var(--muted); font-size:13px; }
+  #grid { display:flex; flex-wrap:wrap; gap:3px; margin-top:16px; }
+  #grid span { width:14px; height:14px; border-radius:3px; background:var(--line); cursor:pointer; }
+  #grid span.d { background:var(--done); } #grid span.c { outline:2px solid var(--accent); }
+</style>
+</head>
+<body>
+<header>
+  <strong>Answer labelling</strong>
+  <label class="muted">Labeller initials <input type="text" id="who" size="5"></label>
+  <span class="grow muted" id="progress"></span>
+  <button id="export">Download CSV</button>
+  <label class="muted"><input type="file" id="import" accept=".csv" hidden><button id="importBtn">Load CSV</button></label>
+</header>
+<main>
+  <details open>
+    <summary><strong>Instructions</strong> (read once; the rule is fixed in advance)</summary>
+    <p>Each item is one model's response to a maths problem or a multiple-choice question. Report the <strong>final answer the response commits to as its own</strong>. Do not solve the problem and do not judge whether the answer is right.</p>
+    <ul>
+      <li><strong>Maths:</strong> write a plain number (<code>1250</code>, <code>-3</code>, <code>2.5</code>). <strong>Multiple choice:</strong> write the option <em>number</em> (e.g. <code>3</code>).</li>
+      <li><strong>Formatted answer first.</strong> If the response gives its answer in a requested format (an answer tag such as <code>&lt;answer&gt;</code>, <code>\boxed{}</code>, "final answer:", or a JSON field), put that value in <strong>Label</strong>. If the surrounding prose names a <em>different</em> final answer, also put the prose value in <strong>Prose answer</strong>; otherwise leave it empty.</li>
+      <li><strong>No format:</strong> take the last answer the response commits to. Ignore numbers mentioned along the way, quoted from other agents, or copied from a format example.</li>
+      <li>An answer tag that is never closed but holds exactly one number counts as committed.</li>
+      <li><strong>NONE</strong>: cut off or never commits. <strong>MULTI</strong>: conflicting final answers and none is identifiable as final.</li>
+      <li>Work saves in this browser automatically; use "Download CSV" when done. Label independently; do not discuss items with the other labeller.</li>
+    </ul>
+  </details>
+  <div class="muted" id="pos"></div>
+  <details id="qbox"><summary class="muted">Question and options (for mapping an option written as text to its number; do not solve it)</summary><pre id="question"></pre></details>
+  <div class="muted">Response:</div>
+  <pre id="text"></pre>
+  <div class="row">
+    <label class="muted">Label <input type="text" id="answer" placeholder="number / option" inputmode="text"></label>
+    <label class="muted">Prose answer <input type="text" id="prose" placeholder="only if different" inputmode="text" size="8"></label>
+    <button id="none">NONE</button><button id="multi">MULTI</button>
+    <input type="text" id="note" placeholder="note (optional)">
+  </div>
+  <div class="row">
+    <button id="prev">← Previous</button><button id="next">Save and next →</button>
+    <button id="nextOpen">Next unlabelled</button>
+  </div>
+  <div id="grid"></div>
+</main>
+<script>
+const ITEMS = /*ITEMS*/[];
+const KEY = "debate-audit-labels-v1";
+let st = { who: "", labels: {} }, cur = 0;
+try { const s = JSON.parse(localStorage.getItem(KEY)); if (s && s.labels) st = s; } catch (e) {}
+const $ = id => document.getElementById(id);
+function save() { try { localStorage.setItem(KEY, JSON.stringify(st)); } catch (e) {} }
+function valid(v) { return v === "NONE" || v === "MULTI" || /^[-+0-9.\/^(), a-zA-Z]+$/.test(v) && /[0-9a-zA-Z]/.test(v); }   // plain number, or a non-integer answer written as given (1/2, sqrt(5), 2^48, 2, -1, p-1)
+function commit() {
+  const it = ITEMS[cur], v = $("answer").value.trim().replace(/,/g, "");
+  if (v === "") { delete st.labels[it.id]; }
+  else if (!valid(v)) { alert("Enter a number, an answer as written (e.g. 1/2, sqrt(5), 2^48, 2, -1), NONE or MULTI."); return false; }
+  else { const p = $("prose").value.trim().replace(/,/g, "");
+    if (p !== "" && !/^-?\d+(\.\d+)?$/.test(p)) { alert("Prose answer: a plain number or empty."); return false; }
+    st.labels[it.id] = { label: v, prose: p, note: $("note").value.trim() }; }
+  save(); return true;
+}
+function show(i) {
+  cur = Math.max(0, Math.min(ITEMS.length - 1, i));
+  const it = ITEMS[cur], l = st.labels[it.id] || {};
+  $("text").textContent = it.text; $("text").scrollTop = 0; $("question").textContent = it.question || "";
+  $("answer").value = l.label || ""; $("prose").value = l.prose || ""; $("note").value = l.note || "";
+  $("none").classList.toggle("on", l.label === "NONE"); $("multi").classList.toggle("on", l.label === "MULTI");
+  $("pos").textContent = `Item ${it.id} (${cur + 1} of ${ITEMS.length})`;
+  const n = ITEMS.filter(x => st.labels[x.id]).length;
+  $("progress").textContent = `${n} of ${ITEMS.length} labelled`;
+  $("grid").innerHTML = "";
+  ITEMS.forEach((x, k) => { const s = document.createElement("span"); s.title = x.id;
+    s.className = (st.labels[x.id] ? "d" : "") + (k === cur ? " c" : ""); s.onclick = () => { if (commit()) show(k); }; $("grid").appendChild(s); });
+  $("answer").focus();
+}
+$("who").value = st.who; $("who").oninput = e => { st.who = e.target.value.trim(); save(); };
+$("prev").onclick = () => { if (commit()) show(cur - 1); };
+$("next").onclick = () => { if (commit()) show(cur + 1); };
+$("nextOpen").onclick = () => { if (!commit()) return; const k = ITEMS.findIndex(x => !st.labels[x.id]); show(k < 0 ? cur : k); };
+$("none").onclick = () => { $("answer").value = "NONE"; if (commit()) show(cur + 1); };
+$("multi").onclick = () => { $("answer").value = "MULTI"; if (commit()) show(cur + 1); };
+$("answer").onkeydown = e => { if (e.key === "Enter") $("next").click(); };
+const q = s => `"${String(s).replace(/"/g, '""')}"`;
+$("export").onclick = () => {
+  commit();
+  const lines = ["id,label,prose,note,labeller"].concat(ITEMS.map(x => { const l = st.labels[x.id] || {}; return [x.id, l.label || "", l.prose || "", q(l.note || ""), q(st.who)].join(","); }));
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([lines.join("\n") + "\n"], { type: "text/csv" }));
+  a.download = `labels_${st.who || "anon"}.csv`; a.click();
+};
+$("importBtn").onclick = () => $("import").click();
+$("import").onchange = async e => {
+  const t = await e.target.files[0].text();
+  t.trim().split("\n").slice(1).forEach(line => {
+    const m = line.match(/^(H\d+),([^,]*),([^,]*),("(?:[^"]|"")*"|[^,]*),/); if (!m) return;
+    const note = m[4].startsWith('"') ? m[4].slice(1, -1).replace(/""/g, '"') : m[4];
+    if (m[2]) st.labels[m[1]] = { label: m[2], prose: m[3], note }; });
+  save(); show(cur);
+};
+show(0);
+</script>
+</body>
+</html>

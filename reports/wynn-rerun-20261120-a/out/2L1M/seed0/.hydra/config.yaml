@@ -1,0 +1,84 @@
+experiment:
+  name: 2L1M
+  num_rounds: 2
+  num_questions: 100
+  summarize: true
+  processing_mode: concurrent
+  max_concurrent_calls: 60
+  log_single_results: false
+agent_counts:
+- 2
+- 1
+agent_types:
+- name: ${llm1.language_models.0.model_name}_agent
+  count: ${agent_counts.0}
+  prompts:
+    system_prompt: ${agent_prompts.system_prompt}
+    partials: ${agent_prompts.partials}
+    additional_partials: ${task.partials}
+  llm_config: ${llm1}
+- name: ${llm2.language_models.0.model_name}_agent
+  count: ${agent_counts.1}
+  prompts:
+    system_prompt: ${agent_prompts.system_prompt}
+    partials: ${agent_prompts.partials}
+    additional_partials: ${task.partials}
+  llm_config: ${llm2}
+checkpoint:
+  frequency: 25
+  resume: false
+version: 1.0
+logging: INFO
+exp_dir: ${hydra:runtime.output_dir}
+seed: 0
+debug: false
+strict: false
+cost_check: false
+results_file_name: results.csv
+wandb:
+  project: basic_debate
+  team: thenormativitylab
+  mode: disabled
+task:
+  partials:
+    discussion_message: "These are the solutions to the problem from other agents:\
+      \ \n{AGENT_RESPONSES}\n\nUsing the solutions from other agents as additional\
+      \ information, can you provide your answer to the math problem? \nExplain your\
+      \ reasoning.\nThe original math problem is {QUESTION_PROMPT}. Your final answer\
+      \ should be a single numerical number, in the form \\\\boxed{{answer}}, at the\
+      \ end of your response.\n"
+  name: gsm8k
+  data_path: ./data/GSM8k/gsm8k_test.jsonl
+  metrics:
+  - accuracy
+agent_prompts:
+  partials:
+    summarization_message_initial: 'Here are a list of opinions from different agents: '
+    summarization_message_final: Write a summary of the different opinions from each
+      of the individual agent and explain the reasoning in each solution.
+  system_prompt: You are a helpful assistant that can answer questions and provide
+    helpful information.
+llm1:
+  language_models:
+  - model_name: llama-3.1-8b-chat
+    litellm_params:
+      model: hosted_vllm/llama
+      api_base: http://wynn-llama:8000/v1
+      timeout: 300
+      num_retries: 7
+      rpm: 1000
+  completion_params:
+    top_p: 0.9
+    max_tokens: 2048
+llm2:
+  language_models:
+  - model_name: mistral-7b
+    litellm_params:
+      model: hosted_vllm/mistral
+      api_base: http://wynn-mistral:8000/v1
+      timeout: 300
+      rpm: 1000
+      num_retries: 7
+  completion_params:
+    top_p: 0.9
+    max_tokens: 2048

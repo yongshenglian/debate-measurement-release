@@ -1,0 +1,7 @@
+gsm8k qwen exit 0
+gsm8k gemma exit 0
+math qwen exit 0
+mmlu qwen exit 0
+math gemma exit 0
+mmlu gemma exit 0
+ALL DONE

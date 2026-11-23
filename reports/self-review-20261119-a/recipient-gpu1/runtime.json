@@ -1,0 +1,28 @@
+{
+  "attention_backend": "FLASHINFER",
+  "effective_cache_dtype": "bfloat16",
+  "family": "qwen",
+  "max_model_len": 8192,
+  "max_num_seqs": 4,
+  "model_dtype": "torch.bfloat16",
+  "output_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "answer": {
+        "type": "integer"
+      },
+      "rationale": {
+        "maxLength": 1200,
+        "type": "string"
+      }
+    },
+    "required": [
+      "rationale",
+      "answer"
+    ],
+    "type": "object"
+  },
+  "quantization": "None",
+  "structured_backend": "guidance",
+  "tensor_parallel_size": 1
+}

@@ -1,0 +1,7 @@
+S1_dov             agreement on recovered 96/96 = 100.0%  PASS  | our reader none but Gemma reads a number: 4/100
+S2_dmad            agreement on recovered 86/88 = 97.7%  PASS  | our reader none but Gemma reads a number: 11/100
+S3_dmad_dovword    agreement on recovered 93/96 = 96.9%  PASS  | our reader none but Gemma reads a number: 4/100
+S4_dmad_raw        agreement on recovered 95/95 = 100.0%  PASS  | our reader none but Gemma reads a number: 4/100
+S5_dmad_512        agreement on recovered 87/87 = 100.0%  PASS  | our reader none but Gemma reads a number: 13/100
+S6_dmad_ansonly    agreement on recovered 91/94 = 96.8%  PASS  | our reader none but Gemma reads a number: 6/100
+S7_dov_chat        agreement on recovered 99/99 = 100.0%  PASS  | our reader none but Gemma reads a number: 1/100

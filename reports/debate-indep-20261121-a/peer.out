@@ -1,0 +1,9 @@
+gemma self       n=600: neutral 84.3  indep 84.7  indep - neutral +0.3 [-0.7, +1.3]
+gemma peer_qwen  n=599: neutral 82.8  indep 84.3  indep - neutral +1.5 [-0.3, +3.3]
+gemma peer_gemma n=600: neutral 86.7  indep 86.0  indep - neutral -0.7 [-2.0, +0.7]
+qwen self       n=599: neutral 65.1  indep 65.1  indep - neutral +0.0 [-1.3, +1.3]
+qwen peer_qwen  n=598: neutral 68.1  indep 67.6  indep - neutral -0.5 [-2.5, +1.5]
+qwen peer_gemma n=599: neutral 76.6  indep 74.1  indep - neutral -2.5 [-5.0, -0.2]
+PRIMARY IR  gemma:peer_qwen: +1.5 [-0.3, +3.3]  p=0.1330  Holm=0.2660
+PRIMARY IR  qwen:peer_qwen: -0.5 [-2.5, +1.5]  p=0.6858  Holm=0.6858
+PRIMARY IR  qwen:peer_gemma: -2.5 [-5.0, -0.2]  p=0.0469  Holm=0.1407

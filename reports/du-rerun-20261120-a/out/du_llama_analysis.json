@@ -1,0 +1,96 @@
+{
+ "all300": {
+  "by_round": [
+   {
+    "round": 0,
+    "vote_du": 0.83,
+    "vote_val": 0.8461111111111111,
+    "ind_du": 0.7777777777777778,
+    "ind_val": 0.6822222222222222,
+    "fallback_pct": 15.222222222222221,
+    "misread_pct": 0.0,
+    "val_none_pct": 18.333333333333332,
+    "none_scored_correct": 0
+   },
+   {
+    "round": 1,
+    "vote_du": 0.84,
+    "vote_val": 0.84,
+    "ind_du": 0.8177777777777778,
+    "ind_val": 0.7933333333333333,
+    "fallback_pct": 6.111111111111111,
+    "misread_pct": 0.0,
+    "val_none_pct": 7.0,
+    "none_scored_correct": 0
+   },
+   {
+    "round": 2,
+    "vote_du": 0.8266666666666667,
+    "vote_val": 0.8361111111111111,
+    "ind_du": 0.8222222222222222,
+    "ind_val": 0.8122222222222222,
+    "fallback_pct": 3.111111111111111,
+    "misread_pct": 0.0,
+    "val_none_pct": 3.6666666666666665,
+    "none_scored_correct": 0
+   }
+  ],
+  "P_du_r2_minus_r0": [
+   -0.3333333333333333,
+   -4.0,
+   3.6666666666666665
+  ],
+  "P_val_r2_minus_r0": [
+   -1.0,
+   -4.055555555555555,
+   2.0000000000000004
+  ]
+ },
+ "first100": {
+  "by_round": [
+   {
+    "round": 0,
+    "vote_du": 0.87,
+    "vote_val": 0.8566666666666667,
+    "ind_du": 0.8066666666666666,
+    "ind_val": 0.6966666666666667,
+    "fallback_pct": 14.0,
+    "misread_pct": 0.0,
+    "val_none_pct": 17.666666666666668,
+    "none_scored_correct": 0
+   },
+   {
+    "round": 1,
+    "vote_du": 0.85,
+    "vote_val": 0.855,
+    "ind_du": 0.84,
+    "ind_val": 0.8166666666666667,
+    "fallback_pct": 4.333333333333333,
+    "misread_pct": 0.0,
+    "val_none_pct": 5.333333333333333,
+    "none_scored_correct": 0
+   },
+   {
+    "round": 2,
+    "vote_du": 0.88,
+    "vote_val": 0.88,
+    "ind_du": 0.8533333333333334,
+    "ind_val": 0.8366666666666667,
+    "fallback_pct": 3.3333333333333335,
+    "misread_pct": 0.0,
+    "val_none_pct": 4.333333333333333,
+    "none_scored_correct": 0
+   }
+  ],
+  "P_du_r2_minus_r0": [
+   1.0,
+   -4.0,
+   6.0
+  ],
+  "P_val_r2_minus_r0": [
+   2.3333333333333335,
+   -2.1666666666666665,
+   7.000000000000001
+  ]
+ }
+}
